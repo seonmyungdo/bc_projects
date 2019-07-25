@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <%- include mod/head.ejs %>
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <%- include mod/main_header.ejs %>
+
+    <!-- Left side column. contains the logo and sidebar -->
+    <%- include mod/main_sidebar.ejs %>
+
+    <!-- Content Wrapper. Contains page content -->
+    <%- include pages/index_sub.ejs %>
+    <!-- /.content-wrapper -->
+
+    <%- include mod/copyright.ejs %>
+
+    <!-- Control Sidebar -->
+    <%- include mod/config.ejs %>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <!-- ./wrapper -->
+
+  <%- include mod/foot.ejs %>
+
+</body>
+
+</html>
