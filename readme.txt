@@ -1,253 +1,262 @@
-[[ ë¦¬ëˆ…ìŠ¤ ê¸°ì´ˆ, ë…¸ë“œ, ë¸”ë¡ì²´ì¸ ì´ë¡ , ì´ë”ë¦¬ì›€ ]]
-1. aws
-    - 1ë…„ê°„ ë¬´ë£Œ ì§€ì› (ìžì›ì„ ë§Žì´ ì‚¬ìš©í•˜ë©´ ê³¼ê¸ˆ)
-    - ì•„ë§ˆì¡´ì—ì„œ ë¦¬ëˆ…ìŠ¤ ì„¸íŒ… (ë¦¬ëˆ…ìŠ¤ë¥¼ ì“°ëŠ” ì´ìœ  : í¼í¬ë¨¼ìŠ¤)
-    - nodejs project(ê°œë°œì´ ì™„ë£Œëœ ê²°ê³¼ë¬¼) deploy(ë°°í¬) & ìš´ì˜
-    - ìƒìš©ì„œë¹„ìŠ¤ ê´€ì  í…ŒìŠ¤íŠ¸
-    - ë¬´ë£Œë¡œ ì‚¬ìš©ì„œë¹„ìŠ¤(ë¦¬ëˆ…ìŠ¤ ìš°ë¶„íŠ¸ 18.xx) ì‚¬ìš©
-    - ë°ì´í„°ë² ì´ìŠ¤ 1ë…„ê°„ ë¬´ë£Œ ì§€ì›
-    - ê°€ìž…í›„ > ì½˜ì†” > ì„œë¹„ìŠ¤ > EC2 í´ë¦­ì‹œ í™”ë©´ì´ ì—´ë¦¬ë©´ ìŠ¹ì¸ì™„ë£Œ
-    - ì„¸íŒ…
-    1) ìš°ì¸¡ ìƒë‹¨ > zone ì¡°ì ˆ > ì•„ì‹œì•„ íƒœí‰ì–‘ (ì„œìš¸) ì¡°ì •
-    2) ì„œë¹„ìŠ¤ > EC2(ì›¹ì„œë¹„ìŠ¤ë¥¼ ìœ„í•œ OS ì„¸íŒ…) > ì¸ìŠ¤í„´ìŠ¤ ì‹œìž‘ > ì™¼ìª½ì°½ì— í”„ë¦¬ í‹°ì–´ë§Œ ì²´í¬
-    3) Ubuntu Server 18.04 LTS (HVM), SSD Volume Type - ami-0794a2d1e6d99117a ì„ íƒ
-    4) ì¤‘ê°„ë‹¨ê³„ë¥¼ ë‹¤ìŒìœ¼ë¡œ ì„ íƒí•  ìˆ˜ ìžˆìœ¼ë‚˜, ê²€í†  ë° ì‹œìž‘ ë²„íŠ¼ ëˆŒëŸ¬ì„œ 7ë‹¨ê³„ë¡œ ì§„ìž…
-    5) ì‹œìž‘í•˜ê¸° > ìƒˆí‚¤íŒŒì¼ > ì´ë¦„ì§€ì • > ë‹¤ìš´ë¡œë“œ > ì¸ìŠ¤í„´ìŠ¤ ì‹œìž‘ > ì¸ìŠ¤í„´ìŠ¤ ë³´ê¸°
-    5-1) ì‹œìž‘ížˆê¸° > ê¸°ì¡´í‚¤íŒŒì¼ > ì„ íƒ > ì²´í¬ > ì¸ìŠ¤í„´ìŠ¤ ì‹œìž‘ > ì¸ìŠ¤í„´ìŠ¤ ë³´ê¸°
-    6) ì„œë²„ì˜ nameì„ ì ë‹¹ížˆ ì§€ì •í•˜ì—¬ í–¥í›„ ê´€ë¦¬ì˜ íŽ¸ì˜ì„± ì œê³µ
-    --------------------------------------------------------ì„œë²„ìƒì„±---------------------------------------------------------------------------------
-    7) ì ‘ì†í•˜ê¸°(ssh) : ìœˆë„ìš° or ë‹¤ë¥¸ OS (í„°ë¯¸ë„ ìž‘ì—…)
-    8) ìœˆë„ìš°ìš© ssh í”„ë¡œê·¸ëž¨ ë‹¤ìš´ë¡œë“œ (putty)
-      > https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
-      > putty.exe (64bit)
-      > puttygen.exe (64bit)
-      > xxx.pem íŒŒì¼ê³¼ ê°™ì€ ìœ„ì¹˜ì— ë‘”ë‹¤
-      > puttygen.exe ì‹¤í–‰ > load > xxx.pem > save private key > ì €ìž¥ > xxx.ppk ìƒì„±ë¨
-      > putty.exe ì‹¤í–‰ > ubuntu@ë³¸ì¸ì„œë²„ê³µì¸IP > saved Sessionì— ì´ë¦„ ê¸°ìž…(aws) > save
-      > Connection > SSH > Auth > Browse í´ë¦­ > xxx.ppk ì„ íƒ > Session 1ë²ˆ ë” save > Open 
+[[ ¸®´ª½º±âÃÊ, ³ëµå, ºí·ÏÃ¼ÀÎ ÀÌ·Ð, ÀÌ´õ¸®¿ò ]]
+1. aws 
+ - 1³â°£ ¹«·á Áö¿ø (ÀÚ¿øÀ» ¸¹ÀÌ »ç¿ëÇÏ¸é °ú±Ý)
+ - ¾Æ¸¶Á¸¿¡¼­ ¸®´ª½º ¼¼ÆÃ (»ó¿ë ½Ã½ºÅÛ)
+ - nodejs project(°³¹ßÀÌ ¿Ï·áµÈ °á°ú¹°) deploy(¹èÆ÷) & ¿î¿µ
+ - »ó¿ë¼­ºñ½º °üÁ¡ Å×½ºÆ®
+ - ¹«·á·Î »ç¿ë¼­ºñ½º(¸®´ª½º ¿ìºÐÆ® 18.xx) »ç¿ë
+ - µ¥ÀÌÅÍº£ÀÌ½º 1³â°£ ¹«·á Áö¿ø
+ - °¡ÀÔÈÄ > ÄÜ¼Ö¿¡ ·Î±×ÀÎ > ¼­ºñ½º > EC2 Å¬¸¯½Ã È­¸éÀÌ ¿­¸®¸é ½ÂÀÎ¿Ï·á(½Ã°£ÀÌ °É¸±¼öÀÖÀ½)
+ - ¼¼ÆÃ
+  1) ¿ìÃø »ó´Ü > zone Á¶Àý > ¾Æ½Ã¾Æ ÅÂÆò¾ç (¼­¿ï) Á¶Á¤
+  2) ¼­ºñ½º > EC2(À¥¼­ºñ½º¸¦À§ÇÑOS¼¼ÆÃ) > ÀÎ½ºÅÏ½º ½ÃÀÛ > ¿ÞÂÊÃ¢¿¡ ÇÁ¸® Æ¼¾î¸¸ Ã¼Å©
+  3) Ubuntu Server 18.04 LTS (HVM), SSD Volume Type ¼±ÅÃ
+  4) Áß°£´Ü°è¸¦ ´ÙÀ½À¸·Î ¼±ÅÃÇÒ¼ö ÀÖÀ¸³ª, °ËÅä¹× ½ÃÀÛ ¹öÆ° ´­·¯¼­ ¹Ù·Î 7´Ü°è ÁøÀÔ
+  5) ½ÃÀÛÇÏ±â > »õÅ°ÆÄÀÏ > ÀÌ¸§ÁöÁ¤ > ´Ù¿î·Îµå > ÀÎ½ºÅÏ½º ½ÃÀÛ > ÀÎ½ºÅÏ½º º¸±â
+  5-1) ½ÃÀÛÇÏ±â > ±âÁ¸Å°ÆÄÀÏ > ¼±ÅÃ > Ã¼Å© > ÀÎ½ºÅÏ½º ½ÃÀÛ > ÀÎ½ºÅÏ½º º¸±â
+  6) ¼­¹öÀÇ nameÀ» Àû´çÈ÷ ÁöÁ¤ÇÏ¿© ÇâÈÄ °ü¸®ÀÇ ÆíÀÇ¼º Á¦°ø
+    ----------------- ¼­¹ö »ý¼º ----------------------------------------------
+  7) Á¢¼ÓÇÏ±â(ssh) : À©µµ¿ì or ´Ù¸¥ os (ÅÍ¹Ì³Î ÀÛ¾÷)
+  8) À©µµ¿ì¿ë ssh ÇÁ·Î±×·¥ ´Ù¿î·Îµå (putty)
+    > https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+    > putty.exe (64bit) ´Ù¿î·Îµå 
+    > puttygen.exe (64bit) ´Ù¿î·Îµå 
+    > xxx.pem ÆÄÀÏ°ú °°Àº À§Ä¡¿¡ µÐ´Ù
+    > puttygen.exe ½ÇÇà > load > xxx.pem > Save Private key > ÀúÀå > xxx.ppk »ý¼ºµÊ
+    > putty.exe ½ÇÇà > ubuntu@º»ÀÎ¼­¹ö°øÀÎIP > saved Session¿¡ ÀÌ¸§ ±âÀÔ( aws ) > save
+    > Connection > SSH > Auth > Browse Å¬¸¯ > xxx.ppk ¼±ÅÃ > session > aws ¼±ÅÃ > save
+    > open
 
-2. ë„ì»¤
-    - ë¦¬ëˆ…ìŠ¤ë¥¼ ìœˆë„ìš°, ë§¥, ë“±ë“± ê°€ìƒí™˜ê²½í•˜ì— ìš´ì˜
-    - ë¦¬ëˆ…ìŠ¤ -> ì´ë¯¸ì§€ë¡œ ì œê³µ
-    - ë¹ ë¥¸ ì„¤ì¹˜
-    - ì ì€ ê³µê°„
-    - ê°€ìƒí™”ìª½ì—ì„œëŠ” ì‹ í¥ê°•ìž -> : í•˜ë‘¡í…ŒìŠ¤íŠ¸, ìš´ì˜
 
-3. javascript
-    - ë°œì „ì§„í–‰ì‚¬í•­
-    1995 : íƒ„ìƒ
-    1997 : ECMA í‘œì¤€ë‹¨ì²´ íƒ„ìƒ => ì´í›„ëŠ” ë°”ì´ëŸ¬ìŠ¤ì˜ ì˜¨ìƒì´ ë˜ë©´ì„œ ì™¸ë©´
-    2005 : êµ¬ê¸€ì§€ë„ -> AJAX -> ë¹„ë™ê¸°í†µì‹ ì„ í†µí•œ í™”ë©´ì²˜ë¦¬ê¸°ìˆ  ë°œì „
-    2008 : í¬ë¡¬ ë¸Œë¼ìš°ì € ë°œí‘œ ë° ì†ŒìŠ¤ ê³µê°œ -> V8ì—”ì§„ ê¸°ë°˜
-    2009 : nodejs ë“±ìž¥ ->  V8ì—”ì§„ ê¸°ë°˜ : js ê¸°ë°˜ ì„œë²„ì‚¬ì´ë“œ ê°œë°œ í”Œëž«í¼
-    2010 : ì•±ì‹œìž¥ í™•ìž¥ -> android vs ios ì§„ì˜ìœ¼ë¡œ í™•ì‚° -> one source multi use ì›€ì§ìž„ì´ ì§„í–‰
-            -> í•˜ì´ë¸Œë¦¬ë“œì•° ì‹œìž¥ (html5 css3 jsë¥¼ ì´ìš©í•œ ê°œë°œë°©ì‹)
-    2011~: Nonì•¡í‹°ë¸Œì—‘ìŠ¤, html5 ë°œì „, ì•±ê°œë°œ SPA(single page application) ë°œì „
-            -> AngularJS(êµ¬ê¸€), reactjs(íŽ˜ì´ìŠ¤ë¶), vue(ì»¤ë®¤ë‹ˆí‹°) ê°œë°œ -> JSë°œì „, ì›¹ì„œë¹„ìŠ¤ ê°œë°œì˜ ë§¤ì»¤ë‹ˆì¦˜ ì„œë²„ì‚¬ì´ë“œì—ì„œ í´ë¼ì´ì–¸íŠ¸ì‚¬ì´ë“œë¡œ ì „í™˜
-            -> AngularJS:typeScript(ê°œë°œì–¸ì–´) -> transcompile->javascript êµ¬ì¡°
-            -> reactjs:modern javascript(í‘œì¤€js) -> babel(í‘œì¤€js->í˜¸í™˜jsìˆ˜ì •) -> webpack(ì••ì¶•,ì†ŒìŠ¤ë³´í˜¸) -> ìµœì¢…ì†ŒìŠ¤ ìƒì„±
-            -> ì•±ê°œìž˜
-                1) ë„¤ì´í‹°ë¸Œ     : android (java or kotlin), ios(objectiv-c, swift)
-                2) í•˜ì´ë¸Œë¦¬ë“œ   : 1ì„¸ëŒ€ : í°ê°­, html5, css3, js
-                                 2ì„¸ëŒ€ : ì•„ì´ì˜¤ë‹‰, ì½”ë“œë„ë°”, react-native(ì¸ìŠ¤íƒ€ê·¸ëž¨, íŽ˜ì´ìŠ¤ë¶)
-                                 3ì„¸ëŒ€ : fultter(êµ¬ê¸€:pc, ëª¨ë°”ì¼, ì „ë°©ìœ„ -> Dart) 
-    2015 : ëª¨ë˜ìŠ¤í¬ë¦½íŠ¸ ì •ë¦½, ë°œí‘œ ì ìš©ì´ ì‹œìž‘
+2. µµÄ¿
+ - ¸®´ª½º¸¦ À©µµ¿ì, ¸Æ, µîµî °¡»óÈ¯°æÇÏ¿¡ ¿î¿µ
+ - ¸®´ª½º-> ÀÌ¹ÌÁö·Î Á¦°ø
+ - ºü¸¥ ¼³Ä¡!!
+ - ÀûÀº °ø°£!!
+ - °¡»óÈ­ÂÊ¿¡¼­´Â ½ÅÈï°­ÀÚ~> : ÇÏµÓÅ×½ºÆ®, ¿î¿µ
 
-    -------------------------------------------------------------------------------------------------------------------------------------------------
-    ë³€ìˆ˜ : var, const, let
-    ì—°ì‚°ìž, ì œì–´ë¬¸, ë°˜ë³µë¬¸ : for ~of (ì§„ì • for each)
-    í•¨ìˆ˜ : function a(){}, function(){}, ()=>{}, ì‚¬ìš©í˜•íƒœ : ì½œë°±í•¨ìˆ˜, ì •ì˜ìœ„ì¹˜: í´ë¡œì €
-    í´ëž˜ìŠ¤ : {}, 5ê°€ì§€ í˜•íƒœ, let obj = {} <- ê°ì²´ ë¦¬í„°ëŸ´, 1íšŒì„±, ì¸ìžê°€ ë§Žì„ ë•Œ ì‚¬ìš©
-    ê¸°íƒ€jsë§Œì˜ í‘œí˜„ 
-
+3. javascript 
+ - ¹ßÀüÁøÇà»çÇ×
+ 1995 : Åº»ý
+ 1997 : ECMA Ç¥ÁØ´ÜÃ¼ Åº»ý -> ÀÌÈÄ´Â ¹ÙÀÌ·¯½ºÀÇ ¿Â»óÀÌ µÇ¸é¼­ ¿Ü¸é~
+ 2005 : ±¸±ÛÁöµµ -> AJAX -> ºñµ¿±âÅë½ÅÀ» ÅëÇÑ È­¸éÃ³¸®±â¼ú ¹ßÀü
+ 2008 : Å©·Ò ºê¶ó¿ìÀú ¹ßÇ¥ ¹× ¼Ò½º °ø°³ => V8¿£Áø ±â¹Ý
+ 2009 : nodejs µîÀå -> v8¿£Áø ±â¹Ý : js±â¹Ý ¼­¹ö»çÀÌµå °³¹ß ÇÃ·§Æû, ½º¸¶Æ®Æù Ãâ½Ã
+ 2010 : ¾Û½ÃÀå È®Àå -> android vs ios Áø¿µÀ¸·Î È®»ê => one source multi use ¿òÁ÷ÀÓÀÌ ÁøÇà
+        -> ÇÏÀÌºê¸®µå¾Û ½ÃÀå (html5 css3 js¸¦ ÀÌ¿ëÇÑ °³¹ß¹æ½Ä)
+ 2011~: Non¾×Æ¼ºê¿¢½º, html5 ¹ßÀü, ¾Û°³¹ß SPA(Single Page Applicaton) ¹ßÀü
+        -> AngularJS(±¸±Û), reactjs(ÆäÀÌ½ººÏ), vue(Ä¿¹Â´ÏÆ¼) °³¹ß -> JS¹ßÀü, À¥¼­ºñ½º °³¹ßÀÇ
+        ¸ÅÄ¿´ÏÁòÀÌ ¼­¹ö»çÀÌµå¿¡¼­ Å¬¶óÀÌ¾ðÆ®»çÀÌµå·Î ÀüÈ¯
+        -> AngularJS:typeScript(°³¹ß¾ð¾î)->transcompile->javascript ±¸Á¶
+        -> reactjs:modern javascript(Ç¥ÁØjs)->babel(Ç¥ÁØjs->È£È¯js¼öÁ¤)->webpack(¾ÐÃà,¼Ò½ºº¸È£)
+           ->ÃÖÁ¾ ¼Ò½º »ý¼º
+        -> ¾Û °³¹ß
+           1) ³×ÀÌÆ¼ºê   : android (java or kotlin), ios(objectiv-c, swift)
+           2) ÇÏÀÌºê¸®µå : 1¼¼´ë : Æù°¸, html5, css3, js
+                          2¼¼´ë : ¾ÆÀÌ¿À´Ð, ÄÚµåµµ¹Ù, react-native(ÀÎ½ºÅ¸±×·¥, ÆäÀÌ½ººÏ)
+                          3¼¼´ë : fultter(±¸±Û:pc,¸ð¹ÙÀÏ,Àü¹æÀ§->Dart)
+ 2015 : ¸ð´ø½ºÅ©¸³Æ® Á¤¸³, ¹ßÇ¥ Àû¿ëÀÌ ½ÃÀÛ~
+ -------------------------------------------------------------------------
+ º¯¼ö : var, const, let
+ ¿¬»êÀÚ,Á¦¾î¹®,¹Ýº¹¹® : for ~ of
+ ÇÔ¼ö : function a(){}, function(){}, ()=>{}, »ç¿ëÇüÅÂ:ÄÝ¹éÇÔ¼ö, Á¤ÀÇÀ§Ä¡:Å¬·ÎÀú
+ Å¬·¹½º : {}, 5°¡Áö ÇüÅÂ, let obj = {} <= °´Ã¼¸®ÅÍ·²,1È¸¼º, ÀÎÀÚ°¡¸¹À»¶§»ç¿ë
+ ±âÅ¸ js¸¸ÀÇ Ç¥Çö
 
 4. nodejs
-    - ë³¸ ê³¼ì •ì—ì„œ nodejsì˜ í¬ì§€ì…˜
-      ì¼ë°˜ìœ ì €ê°€ ë¸”ë¡œê²£ì¸ì— ë‹¤ì´ë ‰íŠ¸ë¡œ ì ‘ê·¼í•´ì„œ ì—…ë¬´ë¥¼ ë³¼ ìˆ˜ ì—†ìœ¼ë¯€ë¡œ, ì•žë‹¨ì— ì„œë¹„ìŠ¤ê°€ í•„ìš”í•˜ë‹¤. ì›¹ê¸°ë°˜ ì„œë¹„ìŠ¤ë¼ë©´, 
-      nodejsì—ì„œ ì œê³µí•˜ëŠ” ì›¹ì„œë¹„ìŠ¤ë¥¼ í†µí•´ ë¸”ë¡ì²´ì¸ìƒì— ì¡´ìž¬í•˜ëŠ” DApp(ì´ë”ë¦¬ì›€ ê¸°ë°˜ ìŠ¤ë§ˆíŠ¸ê³„ì•½(í”„ë¡œê·¸ëž¨))ê³¼ í†µì‹ í•˜ì—¬ ë¸”ë¡ì²´ì¸ì˜ íŠ¹ì§•/íŠ¹ì„±ì´ ë°˜ì˜ëœ ì„œë¹„ìŠ¤ë¥¼ ì œê³µë°›ëŠ”ë‹¤.
-    - ê°œë…
-      > V8ì—”ì§„ ê¸°ë°˜ êµ¬ë™
-      > ë¹„ë™ê¸°, ì´ë²¤íŠ¸ ê¸°ë°˜
-      > ë¹„ìŠ·í•œ ìœ í˜• : ë£¨ë¹„, íŒŒì´ì¬ë¶„ì•¼ì˜ ì›¹ì„œë¹„ìŠ¤
-      > ìŠ¤ë ˆë“œ 1ê°œë¡œ ë™ì‹œì— ë§Œê±´ ìš”ì²­ì„ ì²˜ë¦¬í–ˆë‹¤
-      > nodejs vs spring : ì–´ë–¤ ê²ƒì„ ì‚¬ìš©í•  ê²ƒì¸ê°€? ê°ê° í™˜ê²½ì— ë§žê²Œ êµ¬ì„±
-
-    - ê°œë°œí™˜ê²½êµ¬ì¶•
-     > nodejs org
-    - ëª¨ë˜ìŠ¤í¬ë¦½íŠ¸(í•„ìš”í•œ í‘œí˜„ ìœ„ì£¼)
-    - express
-    - ì‹¤ì œ í”„ë¡œì íŠ¸ : ê°œë°œ(ì„œë²„/í´ë¼ì´ì–¸íŠ¸ì‚¬ì´ë“œ) + ë””ìžì¸ + ê¸°íš + DB
-      -> ê°œë°œì´ ì™„ë£Œë˜ë©´ ë””ìžì¸ì„ ìž…ížˆëŠ” ê³¼ì • ì§„í–‰
-      -> í…œí”Œë¦¿ì„ ì ìš©í•˜ì—¬ ë””ìžì¸ ì™„ì„± ê³¼ì •
-    - ì‹¤ì‹œê°„ í†µì‹ 
-      -> socket.ioë¥¼ ì‚¬ìš©
-
-    - ë°°í¬ ë° ìš´ì˜
-    => ì†ŒìŠ¤ ë°°í¬(ftp ì‚¬ìš©) : íŒŒì¼ì§ˆë¼
-    íŒŒì¼ > ì‚¬ì´íŠ¸ ê´€ë¦¬ìž > ìƒˆ ì‚¬ì´íŠ¸
-    SFTP, í˜¸ìŠ¤íŠ¸ : IP, ë¡œê·¸ì˜¨ìœ í˜• : í‚¤íŒŒì¼, ì‚¬ìš©ìž : Ubuntu, í‚¤íŒŒì¼ : XXXX.ppk
-    => í”„ë¡œì íŠ¸ í´ë” ìƒì„±
-    $ mkdir server
-    $ cd server
-      => íŒŒì¼ ìƒì„± ë° ì—ë””í„° ì˜ˆì‹œ
-      $ nano test.txt
-    $ mkdir notJapan or íŒŒì¼ì§ˆë¼ì—ì„œ ë””ë ‰í† ë¦¬ ìƒì„±
-    ì†ŒìŠ¤ ì—…ë¡œë“œ, node_modules, package-lock.jsonì„ ëº€ ë‚˜ë¨¸ì§€ ì „ë¶€ ì—…ë¡œë“œ
-    $ cd notJapan
-    $ npm install
-    $ nano package.json
-    ======================================================================================
-    nodemon ./bin/www => node ./bin/www
-    ======================================================================================[ìˆ˜ì • ë° ì €ìž¥]
-    $ npm start
-    -> ë¸Œë¼ìš°ì €ì— ì ‘ì† : IP:3000
-    -> 3000ë²ˆ í¬íŠ¸ê°€ ë§‰í˜€ ìžˆì–´ì„œ, ì ‘ì†ë¶ˆê°€ - > ì„œë²„ì˜ ì¸ë°”ìš´ë“œì— 3000ë²ˆì„ ì¶”ê°€í•˜ë¼
-    -> aws > ec2 > ì¸ìŠ¤í„´ìŠ¤ > í•˜ë‹¨ ì„¤ëª…ì— ë³´ì•ˆê·¸ë£¹ > launch-wizard-1 í´ë¦­ > ì¸ë°”ìš´ë“œ > íŽ¸ì§‘ > ì‚¬ìš©ìž ì •ì˜ tcp > 3000ë²ˆ ì¶”ê°€, ìœ„ì¹˜ ë¬´ê´€ìœ¼ë¡œ ì €ìž¥
-    -> ë¸Œë¼ìš°ì €ì— ì ‘ì† : IP:3000 <- ì ‘ì† í™•ì¸
-
-    ======================================================================================
-    [ê¸°ë³¸ êµ¬ë™ë²•ì€ í„°ë¯¸ë„ ì„¸ì…˜ì„ ì ìœ í•˜ê³  ìžˆì–´ì„œ, ë‹¤ë¥¸ ìž‘ì—…ì´ë‚˜, í‡´ê·¼ì´ ë¶ˆê°€í•˜ë‹¤] - ê¸°ë³¸ìš´ì˜-
-    => ì „ë¬¸ì ì¸ í”„ë¡œì„¸ìŠ¤ ê´€ë¦¬ìž í”„ë¡œê·¸ëž¨ì´ í•„ìš”í•˜ë‹¤ -> forever, PM2, ..
-    => PM2 ë¥¼ ì´ìš©í•˜ì—¬ ê´€ë¦¬í•˜ê² ë‹¤
-    $ sudo npm install pm2 -g
-    => ì„œë¹„ìŠ¤ ê°€ë™
-    $ pm2 start ./bin/www
-    => í”„ë¡œì„¸ìŠ¤ ëª©ë¡ í™•ì¸
-    $ pm2 list 
-    => ì¤‘ì§€ : pm2 stop (name or id)
-    $ pm2 stop 0
-    => ì„œë¹„ìŠ¤ ìž¬ê°€ë™ : pm2 restart (name or id)
-    $ pm2 restart 0
-    => ì„œë¹„ìŠ¤ ì¢…ë£Œ, ì™„ì „ì œê±° -> ë”ì´ìƒ ìš´ì˜í•˜ì§€ ì•ŠëŠ”ë‹¤ : pm2 delete (name or id) 
-    $ pm2 delete 0
-    ======================================================================================
-    => ì´ë¦„ì„ ì§€ì •í•˜ì—¬ ì„œë¹„ìŠ¤ ë“±ë¡ ë° êµ¬ë™
-    $ pm2 start ./bin/www --name "notJapan"
-    => ì •ë³´ë³´ê¸°
-    $ pm2 show notJapan
-    => ì •ë³´ë³´ê¸°ë¥¼ í†µí•´ì„œ ì—ëŸ¬ë¡œê·¸, ì—‘ì„¸ìŠ¤(OUT)ë¡œê·¸ì˜ ìœ„ì¹˜ë¥¼ ë³¼ ìˆ˜ ìžˆì—ˆë‹¤.
-    => ë¡œê·¸ ëª¨ë‹ˆí„°ë§
-    $ tail -f /home/ubuntu/.pm2/logs/notJapan-out.log
-    => ì—ëŸ¬ ë¡œê·¸ ëª¨ë‹ˆí„°ë§
-    $ tail -f /home/ubuntu/.pm2/logs/notJapan-error.log
-    => ë¡œê·¸ì˜ ìœ„ì¹˜ëŠ” ë³„ë„ë¡œ ì§€ì •í•˜ì§€ ì•Šìœ¼ë©´ ~/.pm2/logs ë°‘ì— ì¡´ìž¬í•œë‹¤.
-    => ë¡œê·¸ëŠ” ë‚´ê°€ ì§€ì •í•œ ìœ„ì¹˜ì—ì„œ ê´€ë¦¬í•˜ê³  ì‹¶ë‹¤ => ìœ„ì¹˜ ë“±ë¡
-    ======================================================================================
-    => ë¦¬ëˆ…ìŠ¤ì—ì„œ ëª…ë ¹ì„ ë‚˜ì—´í•˜ê³  ì‹¶ìœ¼ë©´ : ëª…ë ¹ && ëª…ë ¹
-    => í”„ë¡œì íŠ¸ í´ë” ë‚´ì— logs í´ë”ë¥¼ ë¯¸ë¦¬ ìƒì„± í•´ë‘”ë‹¤.
-    $ pm2 delete notJapan && pm2 start ./bin/www --name "notJapan" -o ./logs/out.log -e ./logs/err.log --merge-logs
-    => ë¡œê·¸ ìœ„ì¹˜ í™•ì¸
-    $ pm2 show notJapan
-    $ tail -f ./logs/out.log
-    ======================================================================================
-    => ì‚¬ì—…ì´ ìž˜ë˜ì„œ ë™ì ‘ìš”ì²­ì´ í­ì£¼ë¥¼ í–ˆë‹¤. => í˜„ ì„œë²„ì—ì„œ ì„±ëŠ¥ì„ ê·¹ëŒ€í™” í• ê²ƒì¸ê°€? => í´ëŸ¬ìŠ¤í„°
-    => cluster ê¸°ëŠ¥ì„ ì´ìš©í•˜ì—¬ ì„œë²„ë¥¼ n ê°œë¡œ ì¦ì„¤í•˜ê³ , ë³„ë„ ì§€ì •ì´ ì—†ë‹¤ë©´ ë¼ìš´ë“œë¡œë¹ˆ ë°©ì‹ìœ¼ë¡œ ìš”ì²­ì´ ë“¤ì–´ì˜¤ë©´ ì„œë²„ì— ì²˜ë¦¬ë¥¼ ë¶„ë‹´ì‹œí‚¨ë‹¤ (ë¼ìš´ë“œë¡œë¹ˆ 1->2->3->4...)
-    $ pm2 delete notJapan && pm2 start ./bin/www --name "notJapan" -i 3 -o ./logs/out.log -e ./logs/err.log --merge-logs
-    => í´ëž˜ìŠ¤í„° ê°œìˆ˜ë¥¼ ì¡°ì •í•˜ê³  ì‹¶ë‹¤
-    $ pm2 scale notJapan 4
-    => ì „ì²´ ëª¨ë‹ˆí„°
-    $ pm2 monit
-    => ì „ì²´ ë¡œê·¸ ëª¨ë‹ˆí„°
-    $ tail -f ./logs/cluster-*
+ - º» °úÁ¤¿¡¼­ nodejsÀÇ Æ÷Áö¼Ç
+   ÀÏ¹ÝÀ¯Àú°¡ ºí·ÏÃ¼ÀÎ¿¡ ´ÙÀÌ·ºÆ®·Î Á¢±ÙÇØ¼­ ¾÷¹«¸¦ º¼¼ö¾øÀ¸¹Ç·Î,
+   ¾Õ´Ü¿¡ ¼­ºñ½º°¡ ÇÊ¿äÇÏ´Ù. À¥±â¹Ý ¼­ºñ½º¶ó¸é, nodejs¿¡¼­ Á¦°øÇÏ´Â À¥¼­ºñ½º¸¦ ÅëÇØ
+   ºí·ÏÃ¼ÀÎ»ó¿¡ Á¸ÀçÇÏ´Â DApp(ÀÌ´õ¸®¿ò ±â¹Ý ½º¸¶Æ®°è¾à(ÇÁ·Î±×·¥))°ú Åë½ÅÇÏ¿© ºí·ÏÃ¼ÀÎÀÇ Æ¯Â¡
+   /Æ¯¼ºÀÌ ¹Ý¿µµÈ ¼­ºñ½º¸¦ Á¦°ø¹Þ´Â´Ù
+ - °³³ä
+  > V8¿£Áø ±â¹Ý ±¸µ¿
+  > ºñµ¿±â, ÀÌº¥Æ® ±â¹Ý
+  > ºñ½ÁÇÑ À¯Çü : ·çºñ, ÆÄÀÌ½ãºÐ¾ßÀÇ À¥¼­ºñ½º
+  > 1 ½º·¹µå·Î µ¿½Ã¿¡ ¸¸°Ç ¿äÃ»À» Ã³¸®Çß´Ù?
+  > nodejs vs spring : ¾î¶² °ÍÀ» »ç¿ëÇÒ °ÍÀÎ°¡? °¢°¢ È¯°æ¿¡ ¸Â°Ô ±¸¼º
 
 
+ - °³¹ßÈ¯°æ±¸Ãà
+  > nodejs.org
+ - ¸ð´ø½ºÅ©¸³Æ®(ÇÊ¿äÇÑ Ç¥Çö À§ÁÖ)
+ - express
+ - ½ÇÁ¦ ÇÁ·ÎÁ§Æ® : °³¹ß(¼­¹ö/Å¬¶óÀÌ¾ðÆ®»çÀÌµå) + µðÀÚÀÎ + ±âÈ¹ + DB
+   => °³¹ßÀÌ ¿Ï·ÁµÇ¸é µðÀÚÀÎÀ» ÀÔÈ÷´Â °úÁ¤ ÁøÇà
+   => ÅÛÇÃ¸´À» Àû¿ëÇÏ¿© µðÀÚÀÎ ¿Ï¼º °úÁ¤
+ - ½Ç½Ã°£ Åë½Å
+   => socket.io¸¦ »ç¿ë
+ 
+ - ¹èÆ÷ ¹× ¿î¿µ
+   => ¼Ò½º ¹èÆ÷ (ftp¸¦ »ç¿ë) : ÆÄÀÏÁú¶ó
+   ÆÄÀÏ > »çÀÌÆ® °ü¸®ÀÚ > »õ »çÀÌÆ® > 
+   SFTP, È£½ºÆ®:IP, ·Î±×¿ÂÀ¯Çü:Å°ÆÄÀÏ, »ç¿ëÀÚ:ubuntu, Å°ÆÄÀÏ:xxxx.ppk
+   => ÇÁ·ÎÁ§Æ® Æú´õ »ý¼º
+   $ mkdir server
+   $ cd server
+        => ÆÄÀÏ »ý¼º ¹× ¿¡µðÅÍ ¿¹½Ã
+        $ nano test.txt
+   $ mkdir notJapan or ÆÄÀÏÁú¶ó¿¡¼­ µð·ºÅä¸® »ý¼º 
+   ¼Ò½º ¾÷·Îµå, node_modules, package-lock.jsonÀ» »« ³ª¸ÓÁö ÀüºÎ
+   $ cd notJapan
+   $ npm install
+   $ nano package.json
+    -----------------------------
+    nodemon ./bin/www  => node ./bin/www
+    ----------------------------- [¼öÁ¤ ¹× ÀúÀå]
+   $ npm start
+   -> ºê¶ó¿ìÀú¿¡ Á¢¼Ó : IP:3000
+   -> 3000¹ø Æ÷Æ®°¡ ¸·Çô ÀÖ¾î¼­, Á¢¼Ó ºÒ°¡ -> ¼­¹öÀÇ ÀÎ¹Ù¿îµå¿¡ 3000¹øÀ» Ãß°¡ÇÏ¶ó
+   -> aws > ec2 > ÀÎ½ºÅÏ½º > ÇÏ´Ü ¼³¸í¿¡ º¸¾È±×·ì : launch-wizard-1 Å¬¸¯ >
+      ÀÎ¹Ù¿îµå > ÆíÁý > »ç¿ëÀÚ Á¤ÀÇ TCP > 3000¹ø Ãß°¡, À§Ä¡¹«°üÀ¸·Î ÀúÀå
+   -> ºê¶ó¿ìÀú¿¡ Á¢¼Ó : IP:3000 <= Á¢¼Ó È®ÀÎ
+   ---------------------------------------------------------------
+   [±âº» ±¸µ¿¹ýÀº ÅÍ¹Ì³Î ¼¼¼ÇÀ» Á¡À¯ÇÏ°í ÀÖ¾î¼­, ´Ù¸¥ÀÛ¾÷ÀÌ³ª, Åð±ÙÀÌ ºÒ°¡ÇÏ´Ù]
+   => Àü¹®ÀûÀÎ ÇÁ·Î¼¼½º °ü¸®ÀÚ ÇÁ·Î±×·¥ÀÌ ÇÊ¿äÇÏ´Ù -> forever, PM2, .. 
+   => PM2¸¦ ÀÌ¿ëÇÏ¿© °ü¸®ÇÏ°Ù´Ù 
+   $ sudo npm install pm2 -g
+   ------------------------------------------------------------
+   => PM2¸¦ ÀÌ¿ëÇÑ ¼­ºñ½º °¡µ¿
+   $ pm2 start ./bin/www
+   => ÇÁ·Î¼¼½º ¸ñ·Ï È®ÀÎ
+   $ pm2 list
+   => ÁßÁö : pm2 stop name|id
+   $ pm2 stop 0
+   => ¼­ºñ½º Àç°¡µ¿ : pm2 restart name|id
+   $ pm2 restart 0 : pm2 delete name|id
+   => ¼­ºñ½º Á¾·á, ¿ÏÀüÁ¦°Å =>´õÀÌ»ó ¿î¿µÇÏÁö ¾Ê´Â´Ù
+   $ pm2 delete 0
+   ------------------------------------------------------------ 
+   => ÀÌ¸§À» ÁöÁ¤ÇÏ¿© ¼­ºñ½º µî·Ï ¹× ±¸µ¿
+   $ pm2 start ./bin/www --name "notJapan"
+   => Á¤º¸º¸±â 
+   $ pm2 show notJapan
+   => Á¤º¸º¸±â¸¦ ÅëÇØ¼­ ¿¡·¯·Î±×, ¿¢¼¼½º(out)·Î±×ÀÇ À§Ä¡¸¦ º¼¼ö ÀÖ¾ù´Ù
+   => ·Î±× ¸ð´ÏÅÍ¸µ
+   $ tail -f /home/ubuntu/.pm2/logs/notJapan-out.log
+   => ¿¡·¯ ·Î±× ¸ð´ÏÅÍ¸µ
+   $ tail -f /home/ubuntu/.pm2/logs/notJapan-error.log
+   => ·Î±×ÀÇ À§Ä¡´Â º°µµ·Î ÁöÁ¤ÇÏÁö ¾ÊÀ¸¸é ~/.pm2/logs ¹Ø¿¡ Á¸ÀçÇÏ´Ù
+   => ·Î±×´Â ³»°¡ ÁöÁ¤ÇÑ À§Ä¡¿¡¼­ °ü¸®ÇÏ°í ½Í´Ù => À§Ä¡ µî·Ï
+  -----------------------------------------------------------------
+   => ¸®´ª½º¿¡¼­ ¸í·ÉÀ» ³ª¿­ÇÏ°í ½ÍÀ¸¸é : ¸í·É && ¸í·É
+   => ÇÁ·ÎÁ§Æ® Æú´õ ³»¿¡ logs Æú´õ¸¦ ¹Ì¸® »ý¼º ÇØµÐ´Ù
+   $ pm2 delete notJapan && pm2 start ./bin/www --name "notJapan" -o ./logs/out.log -e ./logs/err.log --merge-logs  
+   => ·Î±×À§Ä¡ È®ÀÎ
+   $ pm2 show notJapan
+   $ tail -f ./logs/out.log
+  -----------------------------------------------------------------
+   => »ç¾÷ÀÌ ÀßµÇ¼­ µ¿Á¢¿äÃ»ÀÌ ÆøÁÖ¸¦ Çß´Ù -> Çö ¼­¹ö¿¡¼­ ¼º´ÉÀ» ±Ø´ëÈ­ ÇÒ°ÍÀÎ°¡? => Å¬·¯½ºÅÍ
+   => cluster ±â´ÉÀ» ÀÌ¿ëÇÏ¿© ¼­¹ö¸¦ n°³·Î Áõ¼³ÇÏ°í, º°µµ ÁöÁ¤ÀÌ ¾ø´Ù¸é ¶ó¿îµå·Îºó ¹æ½ÄÀ¸·Î
+   => ¿äÃ»ÀÌ µé¾î¿À¸é ¼­¹ö¿¡ Ã³¸®¸¦ ºÐ´ã½ÃÅ²´Ù (¶ó¿îµå·Îºó:1->2->3->4->...)
+   => ·Îµåº§·±½º ÀÛ¾÷ Load Balancing(LB)
+   $ pm2 delete notJapan && pm2 start ./bin/www --name "notJapan" -i 3 -o ./logs/cluster.log
+   => Å¬·¯½ºÅÍ °³¼ö¸¦ Á¶Á¤ÇÏ°í ½Í´Ù
+   $ pm2 scale notJapan 4
+   => ÀüÃ¼ ¸ð´ÏÅÍ
+   $ pm2 monit
+   => ÀüÃ¼ ·Î±× ¸ð´ÏÅÍ
+   $ tail -f ./logs/cluster-*
+  -----------------------------------------------------------------
+
+5. ºí·ÏÃ¼ÀÎ
+
+6. ÀÌ´õ¸®¿ò
+
+7. ¸®´ª½º
+ - ±âº» ¼¼ÆÃ
+ - °èÁ¤Àº root(·çÆ®:¼ÒÀ¯ÀÚ), ubuntu(ÀÏ¹Ý»ç¿ëÀÚ)
+ - ±âº» os ¾÷µ¥ÀÌÆ®
+  => sudo´Â ·çÆ® ±ÇÇÑÀ¸·Î ¹º°¡ ÀÛ¾÷ÇÒ¶§ »ç¿ë
+     superuser doÀÇ ¾àÀÚ, ¼öÆÛÀ¯Àú ±ÇÇÑÀ¸·Î ¹º°¡¸¦ ¼öÇàÇÒ¶§ »ç¿ëÇÑ´Ù
+  => apt : ubuntuÀÇ ÆÐÅ°Áö °ü¸®ÀÚ
+     -> ÀÎµ¦½º Á¤º¸´Â /etc/apt/source.list ÀúÀå -> ¿©±â¸¦ ÀÐ¾î¼­ ÆÐÅ°Áö ¼³Ä¡½Ã »ç¿ë
+     -> nodejs¸¦ ¼­¹ö¿¡ ¼³Ä¡ÇÏ±â Àü¿¡ ¸î¹öÀüÀ» ¼³Ä¡ÇÏ°Ô ±¸¼ºµÇ¾î ÀÖ´ÂÁö È®ÀÎÈÄ ¹öÀüÀÌ ¾Ê¸ÂÀ¸¸é ¹öÀüÀ» ¸ÂÃç¼­ µî·ÏÈÄ ¼³Ä¡
+  $ sudo apt-get update
+  $ sudo apt-get upgrade
+  => curlÀÌ¶ó´Â ¸ðµâÀ» ¼³Ä¡ÇÑ´Ù
+     -> ´Ù¾çÇÑ ÇÁ·ÎÅäÄÝÀ» ¼öÇàÇÏ´Â Àü¼Û ¶óÀÌºê·¯¸®, ftp, http...µî »ç¿ë
+  $ sudo apt install curl
+  => nodejs ÇöÀç ¼³Ä¡ÇÒ¼ö ÀÖ´Â ¹öÀü Ã¼Å© => ÆÐÅ°Áö Á¤º¸ º¸±â
+  $ sudo apt-cache show nodejs
+  => ...
+     Filename: pool/universe/n/nodejs/nodejs_8.10.0~dfsg-2_amd64.deb
+  => nodejs ¹öÀüÀÌ 8ÀÓÀ¸·Î ¾Ë°Ô µÇ¾ú´Ù    
+  => nodejsÀÇ ¼³Ä¡ ¹öÀüÀ» 10À¸·Î Á¶Á¤ÇÑ´Ù
+  $ curl -sL https://deb.nodesource.com/setup_10.x | sudo bash - 
+  => -s : ÁøÇà»óÅÂ, ¿¡·¯µîÀ» º¸ÀÌÁö ¾Ê´Â´Ù
+  => -L : ¿äÃ» ÆäÀÌÁö°¡ º¯°æµÇ¸é Àç¿äÃ»À» ÁøÇàÇÑ´Ù
+  => shell(½©) -> ¸®´ª½º»ó¿¡¼­ ¸í·É¾î Ã³¸®±â, ÅØ½ºÆ®, ÇÑÁÙ¾¿ ¼øÂ÷ÀûÀ¸·Î ¼öÇà Vs batÆÄÀÏ(À©µµ¿ì)
+    -> bash(¹è½Ã), sh, zbash(Á»´õ ÀÌ»Û)
+    -> ½©ÄÚµåÀÇ Ã¹ÁÙ -> #!/bin/bash : bash·Î ½©½ºÅ©¸³Æ®¸¦ ±¸µ¿ÇØ¶ó¶ó´Â ÀÇ¹Ì
+  => ³ëµå ¼³Ä¡
+  $ sudo apt install nodejs
+  => ¹öÀü È®ÀÎ
+  $ node -v
+  => ¼û±è ÆÄÀÏ±îÁö º¸±â 
+  $ ls -a
+  
 
 
-5. ë¸”ë¡ì²´ì¸
+8. ½ÇÀü ÇÁ·ÎÁ§Æ®
+ - ¸ñÀû
+  > ³ë³ëÀçÆÒÀ» Ä«ÇÇÇÏ¿© nodejs ±â¹ÝÀ¸·Î ±¸Ãà ¹× ¹èÆ÷, ¿î¿µÇÏ°Ù´Ù
+  > nodejsÀÇ ¼­¹ö ±¸¼º + express(¼­¹ö¸¦ ±¸¼ºÇÏ´Â ¸ðµâ)
+  > µ¥ÀÌÅÍº£ÀÌ½º(mysql) ¿¬µ¿ (Pooling, Ç®¸µ <-> orm(°´Ã¼±â¹ÝÄõ¸®Ã³¸®) )
+  > µ¥ÀÌÅÍ ±¸ÃàÀ» À§ÇÑ À¥½ºÅ©·¡ÇÎ ÁøÇà
+    => µ¥ÀÌÅÍ ¼öÁý¹× ÀüÃ³¸® : µ¥ÀÌÅÍ ºÐ¼®ÀÇ 60~70% ºñÁß
+    -> 1´Ü°è(·¹º§) : °ø°øµ¥ÀÌÅÍ, µ¥ÀÌÅÍ¼¾ÅÍ¿¡¼­ Á¦°ø, Åë°èÁ¦°ø, ±¹°¡Á¦°ø => Á¤Á¦µÈ µ¥ÀÌÅÍ
+    -> 2´Ü°è(·¹º§) : openapi¸¦ ÀÌ¿ëÇÑ ¼öÁý (Æ÷ÅÐ, Æ¯¼ö ¸ñÀû,..)         => Á¤Á¦µÈ µ¥ÀÌÅÍ
+    -> [»ç¿ë]3´Ü°è(·¹º§) : À¥½ºÅ©·¡ÇÎ(webscraping) : À¥À» ¿äÃ»ÇØ¼­ »çÀÌÆ®¸¦ ±Ü¾î¼­ html¿¡¼­ µ¥ÀÌÅÍ¸¦ ÃßÃâ
+                    => css selector°¡ ÇÊ¼ö ±â¼ú, DOM(Document Object Model) Á¶ÀÛ
+    -> 4´Ü°è(·¹º§) : ¸ÅÅ©·Î, µå·çÅ·(¿¹¸¦µé¸é ¾ÇÇÏ°Ô »ç¿ëµÇ¸é), Æ¼ÄÏÀÚµ¿¿¹¸Å(¾ÇÇÏ°Ô »ç¿ëµÇ¸é)
+                    => crawling(Å©·Ñ¸µ), ºê¶ó¿öÀú¿¡¼­ »ç¶÷ÀÌ ÇÏ´Â ÇàÀ§Ã³·³ ±¸¼ºÇÏ¿© 
+                    ÀÚµ¿È­½ÃÄÑ¼­ µ¥ÀÌÅÍ¸¦ ¼öÁýÇÏ´Â ÇàÀ§(·Î±×ÀÎ, ±Û¾²±â, µ¥ÀÌÅÍ ÃßÃâ ´Ù µÈ´Ù)
+                    => À¯Æ©ºê, ·Î±×ÀÎÈÄ Ã³¸®ÇØ¾ßÇÏ´Â »çÀÌÆ® => ajax¸¦ »ç¿ëÇÏ´Â»çÀÌÆ®°¡ ÁÖ´ë»ó
+- »ç¿ë ¸ðµâ : Node.js À¥ ¾ÖÇÃ¸®ÄÉÀÌ¼Ç ÇÁ·¹ÀÓ¿öÅ©
+ > expressjs ¸ðµâÀÌ nodejs ¼­¹ö ±¸¼ºÀÇ °ÅÀÇ ´ëºÎºÐÀ» Â÷Áö
+  -> ÀÌ¹Ì ¼­¹ö¸¦ ±¸¼ºÇØ¾ßÇÒ ¸ðµç ³»¿ëÀÌ ´Ù °®Ãß¾î  º´Ù
+- ¼³Ä¡ : ÆÐÅ°Áö Á¶È¸ÇÏ´Â »çÀÌÆ® : npmjs.com
+ npm => nodejs¿¡ ½áµåÆÄÆ® ÆÐÅ°Áö(¸ðµâ)À» ¼³Ä¡ÇÏ´Â ÆÐÅ°Áö °ü¸®ÀÚ 
+ $ npm i -g express
+  -g : ½Ã½ºÅÛ ÀüÃ¼¿¡¼­ »ç¿ë °¡´É
+  i  : install, ¼³Ä¡ÇØ¶ó
+  => bc_projects\node> npm i -g express
+ $ npm i -g express-generator
+- ÇÁ·ÎÁ§Æ® »ý¼º ( ~\bc_projects\node ¿¡¼­ ÁøÇà )
+ $node> express -e notJapan
+ $node> cd notJapan
+ $ npm install
+  -> package.jsonÀ» ÀÐ¾î¼­ dependencies¿¡ Á¸ÀçÇÏ´Â ¸ðµâÀ» ¼³Ä¡
+  -> node_modules Æú´õ°¡ »ý±â°í, °ü·Ã ÆÐÅ°Áö°¡ ÀÌ¾Ê¿¡ ´Ù¿îµÈ´Ù
+- ½ÇÇà
+ $ npm start
+ http://localhost:3000
 
-6. ì´ë”ë¦¬ì›€
-
-7. ë¦¬ëˆ…ìŠ¤
-  - ê¸°ë³¸ ì„¸í‹±
-  - ê³„ì •ì€ root(ë£¨íŠ¸:ì†Œìœ ìž), ubuntu(ì¼ë°˜ì‚¬ìš©ìž)
-  - ê¸°ë³¸ os ì—…ë°ì´íŠ¸
-   => sudo ëŠ” ë£¨íŠ¸ ê¶Œí•œìœ¼ë¡œ ë­”ê°€ ìž‘ì—…í•  ë•Œ ì‚¬ìš©
-      superuser doì˜ ì•½ìž, ìŠˆí¼ìœ ì € ê¶Œí•œìœ¼ë¡œ ë­”ê°€ë¥¼ ìˆ˜í–‰í•  ë•Œ ì‚¬ìš©í•œë‹¤.
-   => apt : ubuntuì˜ íŒ¨í‚¤ì§€ ê´€ë¦¬ìž
-       -> ì¸ë±ìŠ¤ ì •ë³´ëŠ” /etc/apt/source.list ì €ìž¥ -> ì—¬ê¸°ë¥¼ ì½ì–´ì„œ íŒ¨í‚¤ì§€ ì„¤ì¹˜ì‹œ ì‚¬ìš©
-       -> nodejsë¥¼ ì„œë²„ì— ì„¤ì¹˜í•˜ê¸° ì „ì— ëª‡ë²„ì „ì„ ì„¤ì¹˜í•˜ê²Œ êµ¬ì„±ë˜ì–´ ìžˆëŠ”ì§€ í™•ì¸ í›„ ë²„ì „ì´ ì•ˆë§žìœ¼ë©´ ë²„ì „ì„ ë§žì¶°ì„œ ë“±ë¡ í›„ ì„¤ì¹˜
-   $ sudo apt-get update
-   $ sudo apt-get upgrade
-   => curl ì´ë¼ëŠ” ëª¨ë“ˆì„ ì„¤ì¹˜í•œë‹¤
-       -> ë‹¤ì–‘í•œ í”„ë¡œí† ì½œì„ ìˆ˜í–‰í•˜ëŠ” ì „ì†¡ ë¼ì´ë¸ŒëŸ¬ë¦¬, ftp, http...ë“± ì‚¬ìš©
-   $ sudo apt install curl
-   => nodejs í˜„ìž¬ ì„¤ì¹˜í•  ìˆ˜ ìžˆëŠ” ë²„ì „ ì²´í¬ => íŒ¨í‚¤ì§€ ì •ë³´ ë³´ê¸°
-   $ sudo apt-cache show nodejs
-   => ...
-      Filename : pool/universe/n/nodejs/nodejs_8.10.0~dfsg-2_amd64.deb
-   => nodejs ë²„ì „ì´ 8ìž„ì„ ì•Œê²Œ ë˜ì—ˆë‹¤.
-   => nodejsì˜ ì„¤ì¹˜ ë²„ì „ì„ 10ìœ¼ë¡œ ì¡°ì •í•œë‹¤.
-   $ curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
-   => -s : ì§„í–‰ìƒíƒœ, ì—ëŸ¬ë“±ì„ ë³´ì´ì§€ ì•ŠëŠ”ë‹¤.
-   => -L : ìš”ì²­ íŽ˜ì´ì§€ê°€ ë³€ê²½ë˜ë©´ ìž¬ìš”ì²­ì„ ì§„í–‰í•œë‹¤
-   => shell(ì‰˜) -> ë¦¬ëˆ…ìŠ¤ìƒì—ì„œ ëª…ë ¹ì–´ ì²˜ë¦¬ê¸°, í…ìŠ¤íŠ¸, í•œì¤„ì”© ìˆœì°¨ì ìœ¼ë¡œ ìˆ˜í–‰ vs batíŒŒì¼(ìœˆë„ìš°)
-      -> bash(ë°°ì‹œ), sh, zbash(ì¢€ ë” ì´ìœ)
-      -> ì‰˜ì½”ë“œì˜ ì²«ì¤„ -> #!/bin/bash : bashë¡œ ì‰˜ìŠ¤í¬ë¦½íŠ¸ë¥¼ êµ¬ë™í•´ë¼ ë¼ëŠ” ì˜ë¯¸
-   => ë…¸ë“œ ì„¤ì¹˜
-   $ sudo apt install nodejs
-   => ë²„ì „ í™•ì¸
-   $ node -v
-   => ìˆ¨ê¹€ íŒŒì¼ê¹Œì§€ ë³´ê¸°
-   $ ls -a
-   => ì†ŒìŠ¤ ë°°í¬ (ftpë¥¼ ì‚¬ìš©)
+9. °øÁ¤°ü¸®
+ - http://github.com ¿¡ °¡ÀÔ
+ - https://git-scm.com git ÇÁ·Î±×·¥ ´Ù¿î·Îµå
+ - ¼³Ä¡ -> choosing editor xx ¸Þ´º¿¡¼­ visual studio code Ã¹¹øÂ°°ÍÀ¸·Î ¼±ÅÃ -> ³¡±îÁö ÁøÇà
+ - new > »õ·Î¿î ·¹ÆÛÁöÅä¸® »ý¼º > ¸¸¾à private »ý¼º ±ÇÇÑ(±âº»Àº À¯·á)ÀÌ ÀÖÀ¸¸é 
+  »ç¿ë(ÅÃÀÏ)
+ - ·¹ÆÄÁöÅä¸® ¸ÞÀÎ È­¸é¿¡¼­ > Clone or Download > ÁÖ¼Ò Ä«ÇÇ
+   https://github.com/°èÁ¤ÀÌ¸§/bc_projects.git
+ - ·ÎÄÃ PC¿¡¼­ ÇÁ·ÎÁ§Æ®¸¦ À§Ä¡ÇÑ °÷¿¡ ´ÙÀ½°ú °°ÀÌ ¸í·É
+   public
+   $ cd C:\Users\ÇÑ°¡¶÷24\Desktop\test_git
+   $ git clone https://github.com/°èÁ¤ÀÌ¸§/bc_projects.git
+   private
+   $ git clone https://ID:PW@github.com/°èÁ¤ÀÌ¸§/bc_projects.git
+ - Æú´õ ¿É¼Ç¿¡¼­ ¼û±è ÆÄÀÏ º¸±â¸¦ ÇÏ¸é .git Æú´õ¸¦ È®ÀÎÇÒ¼ö ÀÖ´Ù
+ - vs code¸¦ ¿ÀÇÂÇÏ°í, bc_projectsÀ» ¿ÀÇÂÇÑ´Ù
+ 
 
 
-   8. ì‹¤ì „ í”„ë¡œì íŠ¸
-      - ëª©ì 
-        > ë…¸ë…¸ìž¬íŒ¬ì„ ì¹´í”¼í•˜ì—¬ nodejs ê¸°ë°˜ìœ¼ë¡œ êµ¬ì¶• ë° ë°°í¬, ìš´ì˜ í•˜ê² ë‹¤.
-        > nodejsì˜ ì„œë²„ êµ¬ì„± + express (ì„œë²„ë¥¼ êµ¬ì„±í•˜ëŠ” ëª¨ë“ˆ)
-        > ë°ì´í„°ë² ì´ìŠ¤(mysql) ì—°ë™ (Pooling, í’€ë§ <-> orm(ê°ì²´ê¸°ë°˜ì¿¼ë¦¬ì²˜ë¦¬))
-        > ë°ì´í„° êµ¬ì¶•ì„ ìœ„í•œ ì›¹ìŠ¤í¬ëž˜í•‘ ì§„í–‰
-          => ë°ì´í„° ìˆ˜ì§‘ ë° ì „ì²˜ë¦¬ : ë°ì´í„° ë¶„ì„ì˜ 60~70% ë¹„ì¤‘
-          -> 1ë‹¨ê³„(ë ˆë²¨) : ê³µê³µ ë°ì´í„°, ë°ì´í„° ì„¼í„°ì—ì„œ ì œê³µ, í†µê³„ ì œê³µ, êµ­ê°€ ì œê³µ => ì •ì œëœ ë°ì´í„°
-          -> 2ë‹¨ê³„(ë ˆë²¨) : openapië¥¼ ì´ìš©í•œ ìˆ˜ì§‘ ( í¬í„¸, íŠ¹ìˆ˜ëª©ì , ... ) => ì •ì œëœ ë°ì´í„° 
-          -> [ì‚¬ìš©] 3ë‹¨ê³„(ë ˆë²¨) : ì›¹ìŠ¤í¬ëž˜í•‘(webscraping) : ì›¹ì„ ìš”ì²­í•´ì„œ ì‚¬ì´íŠ¸ë¥¼ ê¸ì–´ì„œ html ì—ì„œ ë°ì´í„°ë¥¼ ì¶”ê°€ => css selectorê°€ í•„ìˆ˜ ê¸°ìˆ , DOM(Document Object Model) ì¡°ìž‘
-          -> 4ë‹¨ê³„(ë ˆë²¨) : ë§¤í¬ë¡œ, ë“œë£¨í‚¹(ì˜ˆë¥¼ë“¤ì–´ ì•…í•˜ê²Œ ì‚¬ìš©ë˜ë©´), í‹°ì¼“ ìžë™ì˜ˆë§¤(ì•…í•˜ê²Œ ì‚¬ìš©ë¨) => crawling(í¬ë¡¤ë§), ë¸Œë¼ìš°ì €ì—ì„œ ì‚¬ëžŒì´ í•˜ëŠ” í–‰ìœ„ì²˜ëŸ¼ êµ¬ì„±í•˜ì—¬
-                           ìžë™í™” ì‹œì¼œì„œ ë°ì´í„°ë¥¼ ìˆ˜ì§‘í•˜ëŠ” í–‰ìœ„ (ë¡œê·¸ì¸, ê¸€ì“°ê¸°, ë°ì´í„° ì¶”ì¶œ ë‹¤ ê°€ëŠ¥) => ìœ íŠœë¸Œ, ë¡œê·¸ì¸ í›„ ì²˜ë¦¬í•´ì•¼ í•˜ëŠ” ì‚¬ì´íŠ¸ => ajaxë¥¼ ì‚¬ìš©í•˜ëŠ” ì‚¬ì´íŠ¸ê°€ ì£¼ ëŒ€ìƒ
 
 
-        - ì‚¬ìš© ëª¨ë“ˆ
-          > expressjs ëª¨ë“ˆì´ nodejs ì„œë²„ êµ¬ì„±ì˜ ê±°ì˜ ëŒ€ë¶€ë¶„ì„ ì°¨ì§€
-            -> ì´ë¯¸ ì„œë²„ë¥¼ êµ¬ì„±í•´ì•¼ í•  ëª¨ë“  ë‚´ìš©ì´ ë‹¤ ê°–ì¶”ì–´ ì¡Œë‹¤
-        - ì„¤ì¹˜ : íŒ¨í‚¤ì§€ ì¡°íšŒí•˜ëŠ” ì‚¬ì´íŠ¸ : npmjs.com
-        npm => nodejsì— ì¨ë“œíŒŒíŠ¸ íŒ¨í‚¤ì§€(ëª¨ë“ˆ)ì„ ì„¤ì¹˜í•˜ëŠ” íŒ¨í‚¤ì§€ ê´€ë¦¬ìž
-        $ npm i -g express 
-        -g : ì‹œìŠ¤í…œ ì „ì²´ì—ì„œ ì‚¬ìš© ê°€ëŠ¥ (ì „ì—­)
-        i : install, ì„¤ì¹˜í•´ë¼
-        => C:\Users\501_8\Downloads\bc_projects\node\js_basic> npm i -g express
-        $ npm i -g express-generator
-        - í”„ë¡œì íŠ¸ ìƒì„±
-        $node>express -e notJapan
-        $node>cd notJapan
-        $ npm install
-          -> package.jsonì„ ì½ì–´ì„œ dependenciesì— ì¡´ìž¬í•˜ëŠ” ëª¨ë“ˆì„ ì„¤ì¹˜
-          -> node_modules í´ë”ê°€ ìƒê¸°ê³ , ê´€ë ¨ íŒ¨í‚¤ì§€ê°€ ì´ ì•ˆì— ë‹¤ìš´ëœë‹¤.
-        - ì‹¤í–‰
-          $ npm start
-        http://localhost:3000
 
-    9. ê³µì •ê´€ë¦¬
-    - http://github.com ì— ê°€ìž…
-    - https://git-scm.com git í”„ë¡œê·¸ëž¨ ë‹¤ìš´ë¡œë“œ
-    - ì„¤ì¹˜ -> choosing editor xx ë©”ë‰´ì—ì„œ visual studio code ì²«ë²ˆì§¸ ê²ƒìœ¼ë¡œ ì„ íƒ  -> ëê¹Œì§€ ì§„í–‰
-    - new -> ìƒˆë¡œìš´ ë ˆí¼ì§€í„°ë¦¬ ìƒì„± > ë§Œì•½ Private ìƒì„± ê¶Œí•œ(ê¸°ë³¸ì€ ìœ ë£Œ)ì´ ìžˆìœ¼ë©´ ì‚¬ìš©(íƒì¼)
-    - ë ˆí¼ì§€í„°ë¦¬ ë©”ì¸ í™”ë©´ì—ì„œ > Clone or Download > ì£¼ì†Œì¹´í”¼
-      https://github.com/tjdwns784/bc_projects.git
-    - ë¡œì»¬ PCì—ì„œ ë‹¤ìŒê³¼ ê°™ì´ ëª…ë ¹
-    public
-    $ git clone https://github.com/ê³„ì •ì´ë¦„/bc_projects.git
-    Private
-    $ git clone https://ID:PW@github.com/ê³„ì •ì´ë¦„/bc_projects.git
-    - í´ë” ì˜µì…˜ì—ì„œ ìˆ¨ê¹€ íŒŒì¼ ë³´ê¸°ë¥¼ í•˜ë©´ .git í´ë”ë¥¼ í™•ì¸ í•  ìˆ˜ ìžˆë‹¤
-    - vs codeë¥¼ ì˜¤í”ˆí•˜ê³ , bc_projectsì„ ì˜¤í”ˆí•œë‹¤.
-    - ì› ì†ŒìŠ¤ë¥¼ í´ë” ì±„ ì‹ ê·œ ìœ„ì¹˜ì— ë³µì‚¬ í˜¹ì€ ì´ë™ì‹œí‚´
-    - vs codeì˜ ì™¼ìª½ ì£¼ ë©”ë‰´ ì¤‘ 3ë²ˆì§¸ ì„ íƒ
-    - ì™„ë£Œ í›„ vscodeë¥¼ ë³´ë©´ íŒŒì¼ ë³€í™”ë¥¼ ê°ì§€í•˜ê²Œ ë˜ê³ , node_modulesë¥¼ ì œì™¸í•œ ë‚˜ë¨¸ì§€ê°€ ìž¡ížˆë©´ OK
-    - ì»¤ë°‹ ë©”ì‹œì§€ë¥¼ ìž‘ì„± ë° ì»¤ë°‹ ì²´í¬ í´ë¦­
-    ==========================================================================================================
-    í˜„ í”„ë¡œì íŠ¸ ê³µê°„ì—ì„œ ì‚¬ìš©ìž ë“±ë¡ì´ ì•ˆë˜ë©´ ì‹¤íŒ¨ 1íšŒë§Œ
-    $ git config --global user.name "ê³„ì •ì´ë¦„"
-    $ git config --global user.email "ê³„ì •ì´ë©”ì¼"
-    í•˜ë‹¨ ë¶€ë¶„ì— PUSH/PULL ì•„ì´ì½˜ í´ë¦­í•´ì„œ ë™ê¸°í™” ì²˜ë¦¬ ìˆ˜í–‰
-    ==========================================================================================================
-    ìž‘ì—… ë™ì„ ì— ë”°ë¼, pushì™€ pullì„ ê²¹ì¹˜ì§€ ì•Šê²Œ ìž˜ ì²˜ë¦¬í•œë‹¤. ë™ì¼ íŒŒì¼ ìž‘ì—…í•  ë•ŒëŠ” ìˆœì„œê°€ ì–´ê¸‹ë‚˜ë©´ í”¼ê³¤í•´ì§
+
+
+
+
+

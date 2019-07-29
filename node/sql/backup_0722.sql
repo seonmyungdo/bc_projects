@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `uid` varchar(50) DEFAULT NULL,
   `upw` varchar(50) DEFAULT NULL,
   `name` varchar(50) DEFAULT NULL,
-  `regdate` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `regdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uid` (`uid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- 테이블 데이터 nodedb.users:~0 rows (대략적) 내보내기
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` (`id`, `uid`, `upw`, `name`, `regdate`) VALUES
-	(1, 'guest', '1', '게스트', '2019-07-19 14:01:49');
+	(1, 'guest', '1', '게스트', '2019-07-19 14:01:17');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

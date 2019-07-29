@@ -17,13 +17,13 @@ var mysql       = require('mysql');
 
 request( target_site, (err, response, body)=>{
   if(!err){
-    let $ = cheerio.load( body )
+    let $ = cheerio.load( body )     
     // 데이터를 담는 그릇
     let back_data = []
     // 데이터 덩어리를 구해서 순환 처리(한개씩 꺼내서 처리)  
     $('.mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card').each((index, ele)=>{
       // 카테고리
-      let cate    = $(this).find('.pink-text>span').text()      
+      let cate    = $(this).find('.pink-text>span').text()     
       // 제품명
       let name    = $(this).find('.mdl-card__title-text').text()      
       // 대체상품
@@ -39,9 +39,9 @@ request( target_site, (err, response, body)=>{
       })
     })  
     // 최종 데이터 확인
-    console.log( back_data )
+    //console.log( back_data )
     // 디비 저장
-    saveDB( back_data )
+    //saveDB( back_data )
   }
 } )
 function saveDB( back_data )
@@ -65,3 +65,4 @@ function saveDB( back_data )
     }  
   } );
 }
+

@@ -1,199 +1,184 @@
-1. ë¸”ë¡œì²´ì¸ ì—­ì‚¬, êµ¬ì¡°, íŠ¹ì§•, ì´í•´ ë“±ë“±
-  - ë¸”ë¡ì²´ì¸ 1.0
-    1) ë¶„ì‚°ì›ì¥, ì‹œìŠ¤í…œì„ í™œìš©
-    2) íƒˆì¤‘ì•™í™”, ì‘ì—…ì¦ëª…, p2p ì‹œìŠ¤í…œ <-> client/server ì‹œìŠ¤í…œ
-    3) ê¸°ìˆ ì˜ ì‹ ë¢°ì„±ì„ ë†’ì´ëŠ” ìª½ì— ì£¼ì•ˆì ì„ ë‘ì—ˆë‹¤!
-    4) ì´ëŸ° ê¸°ìˆ ì„ ì¦ëª…í•˜ê¸° ìœ„í•´ -> í™”íì— ì ìš© -> ì¤‘ì•™ ì€í–‰ìœ¼ë¡œë¶€í„° ë…ë¦½ì„±ì„ ì´ë£¨ëŠ”ë° ëª©ì 
-    5) ë¹„íŠ¸ì½”ì¸ì´ íƒ„ìƒ
-  - ë¸”ë¡ì²´ì¸ 2.0
-    1) ë””ì§€í„¸ í™”íë¥¼ ë„˜ì–´ì„œì
-    2) ìì‚°(ì£¼ì‹, ëª¨ê¸°ì§€, ë¶€ë™ì‚°, ê³„ì•½)ë“¤ì— ëŒ€í•œ ìƒì„±ê³¼ ê±°ë˜ê°€ ê°€ëŠ¥í•˜ê²Œ ë˜ì—ˆë‹¤.
-    3) ê±°ë˜ì˜ ëŒ€ìƒì„ í™•ì¥ì‹œì¼œì„œ ê°€ì¹˜ê°€ ë†’ì•„ì¡Œë‹¤
-    4) ethereum(ì´ë”ë¦¬ì›€), Ripple, NXT, ......
-    5) ë¸”ë¡ì²´ì¸ 1.0ì— í”„ë¡œê·¸ë˜ë°ì´ ê°€ëŠ¥í•œ êµ¬ì¡°ë¡œ ë°œì „
-    6) ìŠ¤ë§ˆíŠ¸ ê³„ì•½(ìŠ¤ë§ˆíŠ¸ ì»¨íŠ¸ë™íŠ¸)
-      -> DApp(íƒˆì¤‘ì•™í™” ì–´í”Œë¦¬ì¼€ì´ì…˜, Decentralized Application)
-    7) ì´ë”ë¦¬ì›€
-      -> 2015ë…„ 7ì›”
-      -> ë¹„íƒˆë¦­ ë¶€í…Œë¦°
-      -> 1ì„¸ëŒ€ ë¸”ë¡ì²´ì¸ ëŒ€ë¹„(ê°€ìƒí™”í) + í”„ë¡œê·¸ë˜ë° ê¸°ëŠ¥ => 2ì„¸ëŒ€ (ì§„í™”ëœ)
-      -> í”„ë¡œê·¸ë˜ë°ì´ ê°€ëŠ¥í•˜ë‹¤ => ë‹¤ì–‘í•œ ë¶„ì•¼ë¡œ í™•ì¥ì„±ì„ ë³´ì˜€ë‹¤
+1. ºí·ÏÃ¼ÀÎ ¿ª»ç, ±¸Á¶, Æ¯Â¡, ÀÌÇØ µîµî
 
-2. 2ì„¸ëŒ€ ë¸”ë¡ì²´ì¸ ëŒ€í‘œì£¼ì ì´ë”ë¦¬ì›€ êµ¬ì¶•
-  - 1ì„¸ëŒ€ : ë¹„íŠ¸ì½”ì¸ ( ëŒ€ì¥ì£¼ ) -> ë¸”ë¡ì²´ì¸ìƒì— í™”íë§Œ êµ¬í˜„ëœ ìƒíƒœ
-    - 1ë‹¨ê³„ : ë„¤íŠ¸ì›Œí¬ êµ¬ì¶• ( ë¸”ë¡ì²´ì¸ êµ¬í˜„ë˜ì–´ ìˆë‹¤ )
-              ì´ë”ë¦¬ì›€ê¸°ë°˜ì˜ ë„¤íŠ¸ì›Œí¬ êµ¬ì¶• (ì´ë”ë¦¬ì›€ì„ êµ¬ì¶•í•œ ì–¸ì–´ëŠ” ë‹¤ì–‘í•˜ë‹¤ 
-              -> êµ¬ê¸€ì˜ Goë¥¼ ê¸°ë°˜ìœ¼ë¡œ ë§Œë“  ê²ƒì„ ê°€ì¥ ë§ì´ ì‚¬ìš©)
-              https://geth.ethereum.org/downloads ìœˆë„ìš°ìš© ë‹¤ìš´ë¡œë“œ
-    - ë„¤íŠ¸ì›Œí¬ ì„¤ì¹˜ ìœ„ì¹˜ ì§€ì •
-      ë„¤íŠ¸ì›Œí¬ : ìƒìš© <- í…ŒìŠ¤íŠ¸ <- private(1st) 3ê°€ì§€ í˜•íƒœë¡œ ì¡´ì¬
-    window
-      $ mkdir C:\eth_net
-      $ cd C:\eth_net
-      $ mkdir ./eth_net/Geth
-      $ mkdir ./eth_net/Geth/ethereum
-      $ mkdir ./eth_net/Geth/ethereum/data
-
-    linux
-      $ mkdir ./eth_net
-      $ mkdir ./eth_net/Geth
-      $ mkdir ./eth_net/Geth/ethereum
-      $ mkdir ./eth_net/Geth/ethereum/data
-  
-  - Geth ì„¤ì¹˜
-  - ê³„ì • ìƒì„±
-    í˜„ì¬ ìœ„ì¹˜ëŠ” C:\eth_net
-    $ geth --datadir "./ethereum/data" account new 
-  - ê³„ì • í™•ì¸
-    $ geth --datadir "./ethereum/data" account list
-  - ICO í–‰ì‚¬ì— íˆ¬ìë¥¼ ë°›ì•„ì„œ(ì˜ˆë¥¼ë“¤ë©´) 1ëª…ì´ ëˆì„ ë‚´ê³  ì£¼ì£¼ê°€ ë˜ì—ˆë‹¤
-    => ê³„ì¢Œë¥¼ í•˜ë‚˜ ìƒì„±í•´ ì£¼ì—ˆë‹¤
-    => í˜„ì¬ ê³„ì¢ŒëŠ” 2ê°œ ( ì†Œìœ ì£¼, ì£¼ì£¼ 1ëª… )
-    ì†Œìœ ì£¼ : e8c65de030eb21c8ea170d6f5352c3a32595aa60
-    ì£¼ì£¼ 1ëª… : b04d37c81a814843a29a40cf0d4cdec650973ff4
-  - ë„¤íŠ¸ì›Œí¬ êµ¬ì„±ì„ ìœ„í•´ ì œë„¤ì‹œìŠ¤ ë¸”ë¡ êµ¬ì„± íŒŒì¼ì„ ìœ„ì¹˜í•´ë‘”ë‹¤
-    => ìµœì´ˆ ë¸”ë¡ì„ ìŒ“ê²Œ ëœë‹¤
-    => C:\eth_net\Geth\Genesis.json ìœ„ì¹˜
-  - ì œë„¤ì‹œìŠ¤ ë¸”ë¡ì„ ê°€ì§€ê³  ì´ˆê¸° ë„¤íŠ¸ì›Œí¬ë¥¼ êµ¬ì¶• ëª…ë ¹ ìˆ˜í–‰
-    $ geth --datadir "./ethereum/data" init "./Genesis.json"
-  - ë„¤íŠ¸ì›Œí¬ ê°€ë™
-    $ geth 
-      --identity "PrivateNetwork" : ë„¤íŠ¸ì›Œí¬ ì´ë¦„
-      --datadir "./ethereum/data" : ë„¤íŠ¸ì›Œí¬ ìœ„ì¹˜
-      --port "30303"              : ë„¤íŠ¸ì›Œí¬ì˜ Listening Port ì§€ì •
-      --rpc                       : ì›ê²©ì ‘ì† ë° ëª…ë ¹ ìˆ˜í–‰ OK, Enable the HTTP-RPC server
-      --rpcaddr 0.0.0.0           : RPCì„œë²„ì˜ ì£¼ì†Œ => ê¸°ë³¸ê°’ : localhost
-      --rpcport "8123"            : RPCì„œë²„ í¬íŠ¸
-      --rpccorsdomain "*"         : ê¸°ì¬í•¨ë…€ ë„ë©”ì¸ìœ¼ë¡œë„ ì ‘ì† ê°€ëŠ¥
-      --nodiscover                : ì œë„¤ì‹œìŠ¤ ë¸”ëŸ­ê³¼ ë„¤íŠ¸ì›Œí¬ IDì— ìˆëŠ” ë¸”ë¡ ì—°ê²° ê¸ˆì§€
-      --networkid 1900            : ë„¤íŠ¸ì›Œí¬ ì•„ì´ë””
-      --nat "any"                 : ì™¸ë¶€ ì£¼ì†Œì™€ ë‚´ë¶€ ì£¼ì†Œê°„ ë°˜í™˜ ì²˜ë¦¬
-      --rpcapi "db, eth, net, web3, miner, personal" : ì½˜ì†”ë¡œ ì˜¤í”ˆì´ ë˜ëŠ” api ëª©ë¡, web3=>jsì‚¬ìš©ê°€ëŠ¥
-      --allow-insecure-unlock     : ê³„ì¢Œ ì—°ë½ í—ˆê°€ ì¶”ê°€
-      console                     : ì½˜ì†” ëª¨ë“œ ì˜¤í”ˆ, ëª¨ë“  ì¶œë ¥ì€ ì½˜ì†”ë¡œ ì§„í–‰
-
-    $ geth --identity "PrivateNetwork" --datadir "./ethereum/data" --port "30303" --rpc --rpcaddr 0.0.0.0 --rpcport "8123" --rpccorsdomain "*" --nodiscover --networkid 1900 --nat "any" --rpcapi "db, eth, net, web3, miner, personal" --allow-insecure-unlock console
-
-  - ì›ê²© ì ‘ì†
-  $ geth attach http://localhost:8123
-  - ê³„ì¢Œ í™•ì¸
-  $ eth.accounts
-  - ì”ê³  í™•ì¸
-  $ eth.getBalance(eth.accounts[0])
-
-  [ë¦¬ëˆ…ìŠ¤ìƒì—ì„œ ë„¤íŠ¸ì›Œí¬ êµ¬ì¶•]
-  - ì´ë”ë¦¬ì›€ ì„¤ì¹˜
-  $ sudo apt-get update
-  $ sudo apt-get upgrade
-  $ sudo apt-get install software-properties
-  $ sudo add-apt-repository ppa:ethereum/ethereum
-  $ sudo apt-get update
-  $ sudo apt-get install ethereum
-
-  - ë„¤íŠ¸ì›Œí¬ êµ¬ì¶•
-  $ mkdir ./eth_net
-  $ mkdir ./eth_net/Geth
-  $ mkdir ./eth_net/Geth/ethereum
-  $ mkdir ./eth_net/Geth/ethereum/data
-  $ cd ./eth_net/Geth
+2. 2¼¼´ë ºí·ÏÃ¼ÀÎ ´ëÇ¥ÁÖÀÚ ÀÌ´õ¸®¿ò ±¸Ãà
+ - 1¼¼´ë : ºñÆ®ÄÚÀÎ (´ëÀåÁÖ) -> ºí·ÏÃ¼ÀÎ»ó¿¡ È­Æä¸¸ ±¸ÇöµÈ ÇüÅÂ
+ - 1´Ü°è : ³×Æ®¿öÅ© ±¸Ãà (ºí·ÏÃ¼ÀÎ ±¸ÇöµÇ¾î ÀÖ´Ù)
+ -         ÀÌ´õ¸®¿ò±â¹İÀÇ ³×Æ®¿öÅ© ±¸Ãà (ÀÌ´õ¸®¿òÀ» ±¸ÃàÇÑ ¾ğ¾î´Â ´Ù¾çÇÏ´Ù
+           ->±¸±ÛÀÇ Go¸¦ ±â¹İÀ¸·Î ¸¸µç °ÍÀ» °¡Àå¸¹ÀÌ »ç¿ë -> Geth) 
+ -         https://geth.ethereum.org/downloads À©µµ¿ì¿ë ´Ù¿î·Îµå
+ - ³×Æ®¿öÅ© ¼³Ä¡ À§Ä¡ ÁöÁ¤
+   ³×Æ®¿öÅ©: »ó¿ë <- Å×½ºÆ® <- private 3°¡Áö ÇüÅÂ·Î Á¸Àç
+   window
+   $ mkdir C:\eth_net
+   $ cd C:\eth_net
+   $ mkdir ./eth_net/Geth
+   $ mkdir ./eth_net/Geth/ethereum
+   $ mkdir ./eth_net/Geth/ethereum/data
+   
+   linux
+   $ mkdir ./eth_net   
+   $ mkdir ./eth_net/Geth
+   $ mkdir ./eth_net/Geth/ethereum
+   $ mkdir ./eth_net/Geth/ethereum/data
+ - geth ¼³Ä¡
+ - °èÁ¤»ı¼º
+  ÇöÀçÀ§Ä¡´Â C:\eth_net\Geth
   $ geth --datadir "./ethereum/data" account new 
-    0x526A53638f47b95c5917C213D6cEA3AE4423Aa5E : ì†Œìœ ì£¼
-  $ geth --datadir "./ethereum/data" account new 
-    0x9c833B16F08ee39a6335aA3EF9f04aEA762fEC47 : ì£¼ì£¼
-  $ nano Genesis.json
-    í¸ì§‘ ë° hash ê°’ ì„¸íŒ…
-  $ cat Genesis.json
-    íŒŒì¼ ë‚´ìš© ë³´ê¸°
+ - °èÁ¤ È®ÀÎ
+  $ geth --datadir "./ethereum/data" account list
+ - ICO Çà»ç¿¡ ÅõÀÚ¸¦ ¹Ş¾Æ¼­(¿¹¸¦µé¸é) 1¸íÀÌ µ·À»³»°í ÁÖÁÖ°¡ µÇ¾ú´Ù
+  => °èÁÂ¸¦ ÇÏ³ª »ı¼ºÇØ ÁÖ¾ú´Ù 
+  => ÇöÀç °èÁÂ´Â 2°³(¼ÒÀ¯ÁÖ, ÁÖÁÖ1¸í)
+  ¼ÒÀ¯ÁÖ  : 0x71c8252ed5b5e4452575157dd33958a5df7368e7
+  ÁÖÁÖ1¸í:  0xca065418adaaa01b2183a93c7ceb65cbc0cbf76e 
+ - ³×Æ®¿öÅ© ±¸¼ºÀ» À§ÇØ Á¦³×½Ã½º ºí·Ï ±¸¼º ÆÄÀÏÀ» À§Ä¡ÇØµĞ´Ù
+   => ÃÖÃÊ ºí·ÏÀ» ½×°Ô µÈ´Ù
+   => C:\eth_net\Geth\Genesis.json À§Ä¡
+ - Á¦³×½Ã½º ºí·ÏÀ» °¡Áö°í ÃÊ±â ³×Æ®¿öÅ©¸¦ ±¸Ãà ¸í·É ¼öÇà
   $ geth --datadir "./ethereum/data" init "./Genesis.json"
-  $ geth --identity "PrivateNetwork" --datadir "./ethereum/data" --port "30303" --rpc --rpcaddr 0.0.0.0 --rpcport "8123" --rpccorsdomain "*" --nodiscover --networkid 1900 --nat "any" --rpcapi "db, eth, net, web3, miner, personal" --allow-insecure-unlock console
-  - ì›ê²© ì ‘ì†
-  $ geth attach http://(ë³¸ì¸ì˜ AWS IP )54.180.26.146:8123
-  - ê³„ì¢Œ í™•ì¸
+ - ³×Æ®¿öÅ© °¡µ¿
+  $ geth
+   --identity "PrivateNetwork"  : ³×Æ®¿öÅ© ÀÌ¸§
+   --datadir "./ethereum/data"  : ³×Æ®¿öÅ© À§Ä¡
+   --port "30303"               : ³×Æ®¿öÅ©ÀÇ Listening Port ÁöÁ¤
+   --rpc                        : ¿ø°İÁ¢¼Ó ¹× ¸í·É ¼öÇà OK, Enable the HTTP-RPC server
+   --rpcaddr 0.0.0.0            : RPC¼­¹ö ÁÖ¼Ò => ±âº»°ª localhost 
+   --rpcport "8123"             : RPC¼­¹ö Æ÷Æ®
+   --rpccorsdomain "*"          : ±âÀçÇÏ¸é µµ¸ŞÀÎÀ¸·Îµµ Á¢¼Ó °¡´É
+   --nodiscover                 : Á¦³×½Ã½º ºí·°°ú ³×Æ®¿öÅ© ID¿¡ ÀÖ´Â ºí·Ï ¿¬°á ±İÁö
+   --networkid 1900             : ³×Æ®¿öÅ© ¾ÆÀÌµğ
+   --nat "any"                  : ¿ÜºÎ ÁÖ¼Ò¿Í ³»ºÎ ÁÖ¼Ò°£ º¯È­ Ã³¸® 
+   --rpcapi "db, eth, net, web3, miner, personal" : ÄÜ¼Ö·Î ¿ÀÇÂÀÌ µÇ´Â api ¸ñ·Ï, web3=>js»ç¿ë°¡´É
+   --allow-insecure-unlock      : °èÁÂ ¾ğ¶ô Çã°¡ Ãß°¡
+   console                      : ÄÜ¼Ö¸ğµå ¿ÀÇÂ, ¸ğµç Ãâ·ÂÀº ÄÜ¼Ö·Î ÁøÇà
+
+  $ geth --identity "PrivateNetwork" --datadir "./ethereum/data" --port "30303" --rpc --rpcaddr 0.0.0.0 --rpcport "8123" --rpccorsdomain "*" --nodiscover  --networkid 1900 --nat "any" --rpcapi "db, eth, net, web3, miner, personal" --allow-insecure-unlock console
+ 
+ - ¿ø°İ Á¢¼Ó
+  $ geth attach http://localhost:8123
+ - °èÁÂ È®ÀÎ
   $ eth.accounts
-  - ì”ê³  í™•ì¸
-  $ eth.getBalance(eth.accounts[0])
+ - ÀÜ°í È®ÀÎ
+  $ eth.getBalance( eth.accounts[0] )
+
+ [¸®´ª½º»ó¿¡¼­ ³×Æ®¿öÅ© ±¸Ãà]
+ - ÀÌ´õ¸®¿ò ¼³Ä¡
+ $ sudo apt-get update
+ $ sudo apt-get upgrade
+ $ sudo apt-get install software-properties-common 
+ $ sudo add-apt-repository ppa:ethereum/ethereum
+ $ sudo apt-get update
+ $ sudo apt-get install ethereum
+ - ³×Æ®¿öÅ© ±¸Ãà
+ $ mkdir ./eth_net   
+ $ mkdir ./eth_net/Geth
+ $ mkdir ./eth_net/Geth/ethereum
+ $ mkdir ./eth_net/Geth/ethereum/data
+ $ cd ./eth_net/Geth
+ $ geth --datadir "./ethereum/data" account new <= 2¹ø ¼öÇà
+   0x2461908780315A878D76336CA94C1f42C87C5927 : ¼ÒÀ¯ÁÖ
+   0xeED62a6bDaAA7175b0F17Ad1F42cf741ee9EC1E7 : ÁÖÁÖ
+ $ nano Genesis.json
+   ÆíÁı ¹× hash °© ¼¼ÆÃ
+ $ cat Genesis.json
+   ÆÄÀÏ ³»¿ë º¸±â
+ $ geth --datadir "./ethereum/data" init "./Genesis.json"
+ $ geth --identity "PrivateNetwork" --datadir "./ethereum/data" --port "30303" --rpc --rpcaddr 0.0.0.0 --rpcport "8123" --rpccorsdomain "*" --nodiscover  --networkid 1900 --nat "any" --rpcapi "db, eth, net, web3, miner, personal" console
+ - ¿ø°İ Á¢¼Ó
+  $ geth attach http://º»ÀÎÀÇAWS¾ÆÀÌÇÇ:8123
+ - °èÁÂ È®ÀÎ
+  $ eth.accounts
+ - ÀÜ°í È®ÀÎ
+  $ eth.getBalance( eth.accounts[0] )
+
+3. ÀÌ´õ¸®¿òÀÇ »ç¼³ ³×Æ®¿öÅ© ¿ÜºÎ¿¡¼­ ¿¬µ¿ÇÏ´Â ¹æ¹ı(RPC)
+ - ÀüÀÚÁö°© ±¸Çö
+  1) PRC Á¢¼ÓÀ» ÅëÇØ¼­ ¸í·ÉÀ» Àü¼ÛÇÏ¿© ¼öÇà
+  2) MIST ºê¶ó¿ìÀú(ÀÌ´õ¸®¿ò GUI Åø) ¼öÇà
+  3) nodejs ±â¹İ client side¿¡¼­ ¼öÇà
+  4) nodejs ±â¹İ server side¿¡¼­ ¼öÇà : restAPI ½ºÅ¸ÀÏ
+  5) nodejs ±â¹İ socket.io¸¦ ÀÌ¿ëÇÑ ½Ç½Ã°£ Åë½ÅÀ¸·Î  : ¼ÒÄÏÅë½Å
+   - socket.io ¼¼ÆÃ(Ã¤ÆÃÂüÁ¶)
+ - ¿ø°İ Á¢¼Ó»óÈ²¿¡¼­
+  -> °èÁÂ »ı¼º
+  $ personal.newAccount('1234')
+   "0x9d8b5d4bd6f28c2dc5323690896f42fed139d184"
+  ¼Û±İÇàÀ§ 
+    -> Æ®·»Á§¼Ç (¸¶ÀÌ´× ÀÛ¾÷À» ÅëÇØ Ã³¸®°¡ µÈ´Ù)
+    -> ¿©±â¿¡´Â ÀÌ·± ÇàÀ§°¡ ÀûÇÕÇÑÁö ºí·ÏÃ¼ÀÎÀÇ Âü¿©ÀÚ(³ëµå)µéÀÇ
+       ÇÕÀÇ ¿øÄ¢¿¡ µû¶ó °ËÁõÈÄ OKµÇ¸é ÀåºÎ¿¡ ±â·ÏÀÌ µÇ°í, ±×¶§ 
+       µ·ÀÌ µé¾î¿À°Ô µÈ´Ù 
+  $ eth.sendTransaction({
+    from:eth.accounts[0],
+    to:eth.accounts[1],
+    value:web3.toWei(1, 'ether')
+  })
+  Error: authentication needed: password or unlock
+  => Æ®·»Á§¼Ç ¼öÇàÀ» À§ÇØ(¼ö¼ö·á°¡ ¹ß»ıµÇ°Å³ª, ¼Û±İÇàÀ§µî)
+  ¹ß»ıÀÚ(from)ÀÇ °èÁ¤À» Ç®°í(Ç®·Á¸é ºñ¹øÀ» ÀÔ·Â¹Ş´Â´Ù)
+  ÁøÇà½ÃÄÑ¾ßÇÑ´Ù
+  $ personal.unlockAccount( eth.accounts[0], '1234')
+  true
+  ¼Û±İ
+  $ eth.sendTransaction({
+    from:eth.accounts[0],
+    to:eth.accounts[1],
+    value:web3.toWei(1, 'ether')
+  })
+  "0x838954b79a25c8c3667a77e2e39b564ce055428ba331e387a61bea95300bedeb"
+  Æ®·»Á§¼Ç È®ÀÎ
+  $ eth.pendingTransactions
+  ¼Û±İÇàÀ§¸¦ Ã³¸®ÇÏ±â À§ÇØ miner.start() 
+  miner.start() Æò½Ã¿¡´Â °è¼ÓÇØ¼­ °¡µ¿ÁßÀÌ¿©¼­ ¿©±â¼­´Â ÇÊ¿äÇÒ¶§¸¸
+  ±¸µ¿ÇÏ°í, ¸ØÃß´Â ½ÄÀ¸·Î Ã³¸®ÇÑ´Ù
+  $ miner.start()
+
+ - È­Æó´ÜÀ§
+  1 ether = 1,000,000,000,000,000,000 wei(¼ö¼ö·á Áö±Ş¿ë:wei)
+            wei < Kwei < Mwei < GWei
+  1 ether = 1,000,000,000 GWei (°¡Àå ÀÏ¹İÀûÀÎ °¡½º Áö±Ş´ÜÀ§)
+  1 ether = 1,000,000 Szabo (¼ö¼ö·á Áö±Ş¿ë)
+  1 ether = 1,000 Finney (¼Ò¾× °áÀç¿ë)
+  1 ether = 0.001 Kether
+            Kether < Mether < Gether < Tether
+ 
+ - MIST ºê¶ó¿ìÀú
+  -> ÀÌ´õ¸®¿ò »ó¿ë/Å×½ºÆ®/»ç¼³ ³×Æ®¿öÅ©¿¡ ¸ğµÎ Á¢¼Ó °¡´É
+  -> ³×Æ®¿öÅ© ±¸µ¿ÀÌ ¾ø´Â »óÅÂ¿¡¼­ Á¢¼ÓÇÏ¸é ¹«Á¶°Ç »ó¿ëÀ¸·Î ºÙ°ÔµÇ°í ³ëµå°¡ µ¿±âÈ­µÇ¸é¼­
+     ÀúÀå µ¥ÀÌÅÍ°¡ Ä¿Áö°í, ·Îµå°¡ ¸¹ÀÌ °É¸°´Ù(ÁÖÀÇ)
+  -> ±¸µ¿Àü¿¡ ¹İµå½Ã »ç¼³ ³×Æ®¿öÅ© °¡µ¿½ÃÅ²ÈÄ¿¡ ±¸µ¿ÇÑ´Ù
+  -> https://github.com/ethereum/mist/releases
+     Mist-installer-0-11-1.exe ´Ù¿î·Îµå
+  -> °èÁÂ»ı¼º, ¼Û±İ, Æ®·»Á§¼ÇÃ³¸® È®ÀÎ
+  -> ½º¸¶Æ® ÄÁÆ®·ºÆ® ºôµå->¹èÆ÷ÇÏ´Â À§Ä¡µµ È®ÀÎ
+ - NodeJS ¿¬µ¿
+  -> node ÇÁ·ÎÁ§Æ®¿¡¼­ web3¼³Ä¡   
+   $ npm install web3@0.16.0 
+  -> ÇÁ·ÎÁ§Æ® »ı¼º
+   $ cd C:\Users\ÇÑ°¡¶÷24\Desktop\test_git\bc_projects\Eth\DApp
+   $ express -e mini_wallet
+   $ cd mini_wallet
+   $ npm install
+   $ npm install web3@0.16.0
+   $ package.json¿¡¼­ node ./bin/www => nodemon ./bin/www
+   $ npm start 
+   web3´Â ÀÌ´õ¸®¿ò ³×Æ®¿öÅ©¿¡ Á¢¼ÓÇÏ¿© RPC Ä¿¸Çµå¸¦ »ç¿ëÇÒ¼ö ÀÖ´Ù
+   »ç¿ë°ü·Ã api´Â ³×Æ®¿öÅ© °¡µ¿½Ã Çã°¡µÈ ¸ğµâ¸¸ »ç¿ë°¡´É
+   [Å¬¶óÀÌ¾ğÆ® side¿¡¼­ »ç¿ë ÇÏ±â À§ÇØ]
+   node_modules/web3/dist/web3-light.min.js ÀÌÆÄÀÏÀ» 
+   public/lib(»õ·Î»ı¼º)/web3-light.min.js
+   node_modules/bignumber.js(Æú´õ)/bignumber.min.js ÀÌÆÄÀÏÀ» 
+   public/lib(»õ·Î»ı¼º)/bignumber.min.js
+   -> ÄÚµå¿¡¼­ È®ÀÎ
 
 
-3. ì´ë”ë¦¬ì›€ì˜ ì‚¬ì„¤ ë„¤íŠ¸ì›Œí¬ ì™¸ë¶€ì—ì„œ ì—°ë™í•˜ëŠ” ë°©ë²• (RPC)
-  - ì „ìì§€ê°‘ êµ¬í˜„
-    1) PRC ì ‘ì†ì„ í†µí•´ì„œ ëª…ë ¹ì„ ì „ì†¡í•˜ì—¬ ìˆ˜í–‰
-    2) MIST ë¸Œë¼ìš°ì €(ì´ë”ë¦¬ì›€ GUT íˆ´)ìˆ˜í–‰
-    3) nodejs ê¸°ë°˜ client sideì—ì„œ ìˆ˜í–‰    -------------------------------------web3
-    4) nodejs ê¸°ë°˜ server sideì—ì„œ ìˆ˜í–‰ : restAPI ìŠ¤íƒ€ì¼
-    5) nodejs ê¸°ë°˜ socket.ioë¥¼ ì´ìš©í•œ ì‹¤ì‹œê°„ í†µì‹ ìœ¼ë¡œ ìˆ˜í–‰ : ì†Œì¼“ í†µì‹ 
-  - ì›ê²© ì ‘ì† ìƒí™©ì—ì„œ
-    -> ê³„ì¢Œ ìƒì„±
-    $ personal.newAccount('1234')
-    "0x612d6578ae3ff983fb1f9d68886659ddcb7440a4"
-    -> ì†¡ê¸ˆ í–‰ìœ„ 
-      : íŠ¸ëœì­ì…˜ ( ë§ˆì´ë‹ ì‘ì—…ì„ í†µí•´ ì²˜ë¦¬ê°€ ëœë‹¤. )
-      : ì—¬ê¸°ì—ëŠ” ì´ëŸ° í–‰ìœ„ê°€ ì í•©í•œì§€ ë¸”ë¡ì²´ì¸ì˜ ì°¸ì—¬ì(ë…¸ë“œ)ë“¤ì´ í•©ì˜ ì›ì¹™ì— ë”°ë¼ ê²€ì¦ í›„ okë˜ë©´ ì¥ë¶€ì— ê¸°ë¡ì´ ë˜ê³ , ê·¸ë•Œ ëˆì´ ë“¤ì–´ì˜¤ê²Œ ëœë‹¤.
-    $ eth.sendTransaction({
-      from:eth.accounts[0],
-      to:eth.accounts[1],
-      value:web3.toWei(1,'ether')
-    })
-    Error: authentication needed: password or unlock
-    => íŠ¸ëœì­ì…˜ ìˆ˜í–‰ì„ ìœ„í•´ (ìˆ˜ìˆ˜ë£Œê°€ ë°œìƒë˜ê±°ë‚˜, ì†¡ê¸ˆ í–‰ìœ„ ë“±) ë°œìƒì(from)ì˜ ê³„ì •ì„ í’€ê³  (í’€ë ¤ë©´ ë¹„ë²ˆì„ ì…ë ¥ë°›ëŠ”ë‹¤) ì§„í–‰ì‹œì¼œì•¼í•œë‹¤
-    $ personal.unlockAccount( eth.accounts[0], '1234' )
-    true
-    ì†¡ê¸ˆ
-    $ eth.sendTransaction({
-      from:eth.accounts[0],
-      to:eth.accounts[1],
-      value:web3.toWei(1,'ether')
-    })
-    "0xcb8d9d9b743d527f116831d019f6bfe35f7421d296cf77ec0bfc1ff42eb84535"
-    íŠ¸ëœì­ì…˜ í™•ì¸
-    $ eth.pendingTransactions
-    ì†¡ê¸ˆí–‰ìœ„ë¥¼ ì²˜ë¦¬í•˜ê¸° ìœ„í•´ miner.start()
-    miner.start() í‰ì‹œì—ëŠ” ê³„ì†í•´ì„œ ê°€ë™ì¤‘ì´ì—¬ì„œ ì—¬ê¸°ì„œëŠ” í•„ìš”í• ë•Œë§Œ êµ¬ë™í•˜ê³ , ë©ˆì¶”ëŠ” ì‹ìœ¼ë¡œ ì²˜ë¦¬í•œë‹¤
-    $ miner.start
 
 
-  - í™”íë‹¨ìœ„
-    1 ether = 1,000,000,000,000,000,000 wei(ìˆ˜ìˆ˜ë£Œ ì§€ê¸‰ìš© : wei)
-              wei < Kwei < Mwei < Gwei
-    1 ehter = 1,000,000,000,GWei (ê°€ì¥ ì¼ë°˜ì ì¸ ê°€ìŠ¤ ì§€ê¸‰ë‹¨ìœ„)
-    1 ehter = 1,000,000,Szabo (ìˆ˜ìˆ˜ë£Œ ì§€ê¸‰ìš©)
-    1 ehter = 1,000,Finney (ì†Œì•¡ ê²°ì œìš©)
-    1 ehter = 0.001 Kether
-              Kether < Mether < Gether < Tether
-  - MIST ë¸Œë¼ìš°ì €
-    -> ì´ë”ë¦¬ì›€ ìƒìš©/í…ŒìŠ¤íŠ¸/ì‚¬ì„¤ ë„¤íŠ¸ì›Œí¬ì— ëª¨ë‘ ì ‘ì† ê°€ëŠ¥
-    -> ë„¤íŠ¸ì›Œí¬ êµ¬ë™ì´ ì—†ëŠ” ìƒíƒœì—ì„œ ì ‘ì†í•˜ë©´ ë¬´ì¡°ê±´ ìƒìš©ìœ¼ë¡œ ë¶™ê²Œ ë˜ê³  ë…¸ë“œê°€ ë™ê¸°í™”ë˜ë©´ì„œ ì €ì¥ ë°ì´í„°ê°€ ì»¤ì§€ê³ , ë¡œë“œê°€ ë§ì´ ê±¸ë¦°ë‹¤(ì£¼ì˜)
-    -> êµ¬ë™ì „ì— ë°˜ë“œì‹œ ì‚¬ì‹¤ ë„¤íŠ¸ì›Œí¬ ê°€ë™ì‹œí‚¨ í›„ì— êµ¬ë™í•œë‹¤
-    -> http://github.com/ethereum/mist/releases
-       Mist-installer-0-11-1.exe ë‹¤ìš´ë¡œë“œ
-    -> ê³„ì¢Œìƒì„±, ì†¡ê¸ˆ, íŠ¸ëœì­ì…˜ì²˜ë¦¬ í™•ì¸
-    -> ìŠ¤ë§ˆíŠ¸ ì»¨íŠ¸ë™íŠ¸ ë¹Œë“œ -> ë°°í¬í•˜ëŠ” ìœ„ì¹˜ë„ í™•ì¸
-  - NodeJS ì—°ë™
-    -> node í”„ë¡œì íŠ¸ì—ì„œ web3 ì„¤ì¹˜
-      $ npm install web3@0.16.0
-    -> í”„ë¡œì íŠ¸ ìƒì„±
-      $ cd c:\Users\501_8\Desktop\test_git\bc_projects\Eth\DApp
-      $ express -e mini_wallet
-      $ cd mini_wallet
-      $ npm install
-      $ npm install web3@0.16.0
-      DApp/mini_wallet/package.jsonì—ì„œ node ./bin/www => nodemon ./bin/www
-      $ npm start
-      web3ëŠ” ì´ë”ë¦¬ì›€ ë„¤íŠ¸ì›Œí¬ì— ì ‘ì†í•˜ì—¬ RPC ì»¤ë§¨ë“œë¥¼ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤
-      ì‚¬ìš©ê´€ë ¨ apiëŠ” ë„¤íŠ¸ì›Œí¬ ê°€ë™ ì‹œ í—ˆê°€ëœ ëª¨ë“ˆë§Œ ì‚¬ìš©ê°€ëŠ¥
-      [í´ë¼ì´ì–¸íŠ¸ ì‚¬ìš©ì„ ìœ„í•´]
-      node_modules/web3/dist/web3-light.min.js ì´ íŒŒì¼ì„ public/lib(ìƒˆë¡œìƒì„±)/web-light.min.js
-      node_modules/bignumber.js(í´ë”)/bignumber.min.js ì´ íŒŒì¼ì„ public/lib(ìƒˆë¡œìƒì„±)/bignumber.min.js
-      -> ì½”ë“œì—ì„œ í™•ì¸
+4. ¼Ö¸®µğÆ¼ ¾ğ¾î ÀÌÇØ (ÀÌ´õ¸®¿ò ³×Æ®¿öÆ® »ó¿¡ ÇÁ·Î±×·¥ÀÌ °¡¹ÌµÈ ¾ÛÀ» °³¹ßÇÏ´Â ¾ğ¾î)
+ - ¿¡µğÅÍ : remix
+   https://remix.ethereum.org
 
-
-
-
-
-4. ì†”ë¦¬ë””í‹° ì–¸ì–´ ì´í•´ (ì´ë”ë¦¬ì›€ ë„¤íŠ¸ì›Œí¬ ìƒì— í”„ë¡œê·¸ë¨ì´ ê°€ë¯¸ëœ ì•±ì„ ê°œë°œí•˜ëŠ” ì–¸ì–´)
-  - ì—ë””í„° : remix
-    https://remix.ethereum.org
-
-5. DApp êµ¬ì„± ( Node ê¸°ë°˜, ì‚¬ì„¤ë„¤íŠ¸ì›Œí¬ + node ì„œë¹„ìŠ¤ )
-  - ì „ìì§€ê°‘
-  - ì „ìíˆ¬í‘œ
-  - ë°°íŒ… ì‹œìŠ¤í…œ
+5. DApp ±¸¼º ( Node ±â¹İ, »ç¼³³×Æ®¿öÅ© + node ¼­ºñ½º )
+ - ÀüÀÚÁö°©
+ - ÀüÀÚÅõÇ¥
+ - ¹èÆÃ½Ã½ºÅÛ.. 

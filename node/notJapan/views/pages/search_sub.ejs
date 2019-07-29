@@ -1,68 +1,54 @@
 <div class="content-wrapper">
-    <!-- 현 페이지의 주제, path -->
-    <section class="content-header">
-        <h1>
-            불매 목록
-            <small>경제왜란</small>
-        </h1>
-        <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
-        </ol>
-    </section>
-
-    <section class="content">
-        <!-- Small boxes (Stat box) -->
-        <div class="row">
-            <!-- 컬럼의 총합은 12, 구분은 col-lg-수치 -->
-            <div class="col-lg-12 col-xs-12">
-                <!-- small box -->
-                <div class="small-box bg-aqua">
-                    <form>
-                        <input style='color:black;' type='text' name='keyword' placeholder='찾고싶은 상품' autofocus />
-                        <input style='color:black;' type='submit' value='검색' />
-                    </form>
-                    <div id='results'>
-
-                    </div>
-                </div>
-            </div>
-            <!-- ./col -->
-
+  <!-- 현 페이지의 주제, path -->
+  <section class="content-header">
+    <h1>
+      불매 목록
+      <small>경제왜란</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li class="active">검색</li>
+    </ol>
+  </section>
+  <section class="content">
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <!-- small box -->
+        <div class="small-box bg-aqua" >
+            <form>
+              <input style='color:black;' type='text' name='keyword' 
+                      placeholder="찾고싶은 상품" autofocus/>
+              <input style='color:black;' type='submit' value='검색'/>
+            </form>
+          <div id='results'></div>
         </div>
-        <!-- /.row -->
-        <div class="row">
-
-            <!-- 데이터 1개당 아래 코드가 반복된다 -->
-            <% for( row of rows ) { %>
-            <!-- 컬럼의 총합은 12, 구분은 col-lg-수치 -->
-
-            <div class="col-lg-3 col-xs-6">
-                <!-- small box -->
-                <!-- <% if( row.cate != '금융') { %>
-                <div class="small-box bg-aqua">
-                    <% }else{ %>
-                    <div class="small-box bg-yellow">
-                        <%  } %> -->
-                        <div class = "small-box <%= row.cate != '금융' ? 'bg-aqua' : 'bg-yellow'  %>">
-                        <div class="inner">
-                            <h3><%= row.cate %></h3>
-
-                            <p><%= row.name %></p>
-                            <p><%= row.chgName %></p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-bag"></i>
-                        </div>
-                        <a href="#" class="small-box-footer"><%= row.hash %> <i
-                                class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-                <% } %>
-                <!-- ./col -->
+      </div>
+    </div>
+    <div class="row">
+      
+      <!-- 데이터 1개당 아래 코드가 반복된다 -->
+      <% for( row of rows ){ %>
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <!-- <% if( row.cate != '금융' ) { %>
+            <div class="small-box bg-aqua">
+          <% }else{ %>
+            <div class="small-box bg-yellow">
+          <% }      %> -->
+          <div class="small-box <%= row.cate != '금융' ? 'bg-aqua' : 'bg-yellow' %>">
+            <div class="inner">
+              <h3><%= row.cate %></h3>  
+              <p><%= row.name %></p>
+              <p><%= row.chgName %></p>
             </div>
-            <!-- /.row -->
+            <div class="icon">
+              <i class="ion ion-bag"></i>
+            </div>
+            <a href="#" class="small-box-footer"><%= row.hash %> <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      <% }      %>
 
-    </section>
-    <!-- /.content -->
+    </div>
+  </section>
 </div>
