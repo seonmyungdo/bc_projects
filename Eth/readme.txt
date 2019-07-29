@@ -101,6 +101,44 @@
     3) nodejs 기반 client side에서 수행
     4) nodejs 기반 server side에서 수행 : restAPI 스타일
     5) nodejs 기반 socket.io를 이용한 실시간 통신으로 수행 : 소켓 통신
+  - 원격 접속 상황에서
+    -> 계좌 생성
+    $ personal.newAccount('1234')
+    "0x612d6578ae3ff983fb1f9d68886659ddcb7440a4"
+    -> 송금 행위 
+      : 트랜잭션 ( 마이닝 작업을 통해 처리가 된다. )
+      : 여기에는 이런 행위가 적합한지 블록체인의 참여자(노드)들이 합의 원칙에 따라 검증 후 ok되면 장부에 기록이 되고, 그때 돈이 들어오게 된다.
+    $ eth.sendTransaction({
+      from:eth.accounts[0],
+      to:eth.accounts[1],
+      value:web3.toWei(1,'ether')
+    })
+    Error: authentication needed: password or unlock
+    => 트랜잭션 수행을 위해 (수수료가 발생되거나, 송금 행위 등) 발생자(from)의 계정을 풀고 (풀려면 비번을 입력받는다) 진행시켜야한다
+    $ personal.unlockAccount( eth.accounts[0], '1234' )
+    송금
+    $ eth.sendTransaction({
+      from:eth.accounts[0],
+      to:eth.accounts[1],
+      value:web3.toWei(1,'ether')
+    })
+    트랜잭션 확인
+    $ eth.pendingTransactions
+    송금행위를 처리하기 위해 miner.start()
+    miner.start() 평시에는 계속해서 가동중이여서 여기서는 필요할때만 구동하고, 멈추는 식으로 처리한다
+    $ miner.start
+
+
+    화폐단위
+    1 ether = 1,000,000,000,000,000,000 wei(수수료 지급용 : wei)
+              wei < Kwei < Mwei < Gwei
+    1 ehter = 1,000,000,000,GWei (가장 일반적인 가스 지급단위)
+    1 ehter = 1,000,000,Szabo (수수료 지급용)
+    1 ehter = 1,000,Finney (소액 결제용)
+    1 ehter = 0.001 Kether
+              Kether < Mether < Gether < Tether
+    
+
 
 
 4. 솔리디티 언어 이해 (이더리움 네트워크 상에 프로그램이 가미된 앱을 개발하는 언어)
